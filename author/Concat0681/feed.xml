@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="http://localhost:4000/author/Concat0681/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+  <updated>2023-05-16T17:47:36+09:00</updated>
+  <id>http://localhost:4000/author/Concat0681/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Concat0681 | </title>
+  
+
+  
+    <subtitle>이상화의포토폴리오입니다.</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">CampingTogether</title>
+      <link href="http://localhost:4000/portfolio-campingTogether" rel="alternate" type="text/html" title="CampingTogether" />
+      <published>2023-05-12T03:00:00+09:00</published>
+      <updated>2023-05-12T03:00:00+09:00</updated>
+      <id>http://localhost:4000/portfolio-campingTogether</id>
+      <content type="html" xml:base="http://localhost:4000/portfolio-campingTogether">&lt;style&gt;
+    .slide-arrow {
+        position : absolute;
+        top : 50%;
+        background-color : white;
+    }
+    .slide-arrow span{
+        font-size : 50px
+    }
+    .slide-next {
+        right : -55px;
+    }
+    .slide-prev{
+        left : -50px;
+    }
+    .icon-list{
+        display : flex;
+        justify-content : flex-start;
+    }
+    .icon-list&gt;img{
+        width : 100px;
+    }
+    .list-wrap{
+       width  : 100%
+    }
+    .description-box{
+        margin-left : 15px;
+        height : 600px;
+        overflow-y : auto;
+    }
+&lt;/style&gt;
+
+&lt;h4 id=&quot;제목--camping-together&quot;&gt;제목 : Camping Together&lt;/h4&gt;
+
+&lt;h4 id=&quot;기간--2023년-03월-27일--2023년-05월-03일&quot;&gt;기간 : 2023년 03월 27일 ~ 2023년 05월 03일&lt;/h4&gt;
+
+&lt;h4 id=&quot;인원--6명-기여율-20&quot;&gt;인원 : 6명 기여율 20%&lt;/h4&gt;
+
+&lt;h4 id=&quot;github--httpsgithubcomconcat0681campingtogether_final&quot;&gt;GitHub : &lt;a href=&quot;https://github.com/Concat0681/CampingTogether_final&quot;&gt;https://github.com/Concat0681/CampingTogether_final&lt;/a&gt;&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css&quot; /&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css&quot; /&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;h4 id=&quot;담당기능&quot;&gt;담당기능&lt;/h4&gt;
+
+&lt;div class=&quot;slick-content&quot; style=&quot;width : 100%;&quot;&gt;
+    &lt;div style=&quot;display : flex;&quot;&gt;
+        &lt;img src=&quot;assets/built/images/campingTogether/campingTogether-1.jpg&quot; style=&quot;width : 60%; margin : 0&quot; /&gt;
+        &lt;div class=&quot;description-box&quot;&gt;
+            &lt;h4&gt;구현기능설명&lt;/h4&gt;&lt;br /&gt;
+            -상단 검색 바
+            DateRangePicker를 사용 하여 입실날짜와 퇴실날짜를 입력 받고 지역과 인원을 선택해 검색할 수 있습니다.&lt;br /&gt;&lt;br /&gt;
+
+            -페이지 스크롤 시 배경화면 사진을 변경해 화면 전체 가운데를 비워 둔 후 배경화면이 커튼처럼 스크롤 내릴 시 보이게 구현했습니다.&lt;br /&gt;&lt;br /&gt;
+
+            -화면 하단에는 캠핑장 들을 신규 순, 평점 순으로 정렬 해 리스트를 구현했습니다.&lt;br /&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+     &lt;div style=&quot;display : flex;&quot;&gt;
+        &lt;img src=&quot;assets/built/images/campingTogether/campingTogether-2.jpg&quot; style=&quot;width : 60%; margin : 0&quot; /&gt;
+        &lt;div class=&quot;description-box&quot;&gt;
+            &lt;h4&gt;구현기능설명&lt;/h4&gt;&lt;br /&gt;
+            -상세 조건 검색 바&lt;br /&gt;
+            날짜, 인원, 캠핑장 조건을 선택 한 뒤 검색하면 Ajax를 이용해 리스트를 받아왔습니다.&lt;br /&gt;&lt;br /&gt;
+
+            -평점 순, 가격 순&lt;br /&gt;
+            상세 조건과 마찬가지로 정렬된 리스트를 Ajax로 받아왔습니다.&lt;br /&gt;&lt;br /&gt;
+
+            -지도로 보기&lt;br /&gt;
+            캠핑장 주소를 Naver geocode를 사용해 위도, 경도를 구한 뒤 Naver Map API를 사용, 캠핑장 위치를 마커에 추가해 선택하면 상세보기 페이지로 이동할 수 있게 구현했습니다.
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;display : flex;&quot;&gt;
+        &lt;img src=&quot;assets/built/images/campingTogether/campingTogether-3.jpg&quot; style=&quot;width : 60%; margin : 0&quot; /&gt;
+        &lt;div class=&quot;description-box&quot;&gt;
+            &lt;h4&gt;구현기능설명&lt;/h4&gt;&lt;br /&gt;
+            -캠핑장 좋아요&lt;br /&gt;
+            캠핑장을 유저가 자신의 리스트에 저장할 수 있습니다.&lt;br /&gt;&lt;br /&gt;
+
+            -문의하기&lt;br /&gt;
+            쪽지 함을 WebSocket을 이용해 만들어 문의하기를 보내면 받는 사용자가 바로 확인 할 수 있게 구현했습니다.&lt;br /&gt;&lt;br /&gt;
+
+            -제공서비스&lt;br /&gt;
+            캠핑장이 제공하는 서비스들을 배열에 저장해 놓은 값과 비교해 맞는 값이 있으면 아이콘으로 보여지게 구현했습니다.&lt;br /&gt;&lt;br /&gt;
+
+            -날씨정보&lt;br /&gt;
+            Open Weather Map API를 이용해 5일치 날씨정보를 캠핑장에 위치에 기반해 데이터를 받아와 날씨 정보를 구현했습니다.
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;display : flex;&quot;&gt;
+        &lt;img src=&quot;assets/built/images/campingTogether/campingTogether-4.jpg&quot; style=&quot;width : 60%; margin : 0&quot; /&gt;
+        &lt;div class=&quot;description-box&quot;&gt;
+            &lt;h4&gt;구현기능설명&lt;/h4&gt;&lt;br /&gt;
+            -전체 구성&lt;br /&gt;
+            캠핑용품을 3분류로 나누어 Slick슬라이드를 이용해 화살표를 클릭 시 캠핑용품 -&amp;gt; 차박 용품 -&amp;gt; 기타 용품 순으로 화면 전체 슬라이드를 구현했습니다. &lt;br /&gt;&lt;br /&gt;
+
+            -최신 순, 가격 순, 평점 순&lt;br /&gt;
+            캠핑용품을 정렬하는 버튼으로 Ajax로 정렬된 리스트를 받아 왔습니다.&lt;br /&gt;&lt;br /&gt;
+
+            -물품 리스트&lt;br /&gt;
+            물품 한 개를 hover하면 숨겨진 요소가 나타납니다. 그 요소를 클릭 시 숨겨놓은 Modal 창이 나타나 물품의 기본적인 정보를 확인할 수 있습니다.
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;display : flex;&quot;&gt;
+        &lt;img src=&quot;assets/built/images/campingTogether/campingTogether-5.jpg&quot; style=&quot;width : 60%; margin : 0&quot; /&gt;
+        &lt;div class=&quot;description-box&quot;&gt;
+            &lt;h4&gt;구현기능설명&lt;/h4&gt;&lt;br /&gt;
+            -상품 이미지 &lt;br /&gt;
+            Slick 슬라이드 2개를 사용해 하단에 있는 슬라이드는 여러 사진을 한번에 보여주고 클릭 시 상단에 사진도 바뀌게 구현했습니다.&lt;br /&gt;&lt;br /&gt;
+
+            -수량 변경&lt;br /&gt;
+            물품의 수량 변경 시 배송비를 포함한 최종금액을 JavaScript 에서 연산한 뒤 Jsp에 그 값을 보내주었습니다.&lt;br /&gt;&lt;br /&gt;
+
+            -장바구니&lt;br /&gt;
+            장바구니 클릭 시 상품이 장바구니에 추가되고 이미 추가된 상품은 “추가되었습니다.” 버튼으로 교체하였습니다.&lt;br /&gt;&lt;br /&gt;
+
+            -상품 후기&lt;br /&gt;
+            상품의 등록, 수정, 삭제를 ajax로 처리해 최소한의 페이지 이동으로 댓글을 볼 수 있고 수정할 수 있게 하였습니다.
+            상품의 평점 또한 후기의 별 점이 바로 반영되게 하였습니다.
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;div&gt;&lt;h4&gt;개발 환경&lt;/h4&gt;&lt;/div&gt;
+
+&lt;div class=&quot;list-wrap&quot;&gt;
+    &lt;div&gt;Front-End&lt;/div&gt;
+    &lt;div class=&quot;icon-list&quot;&gt;
+        &lt;img src=&quot;assets/built/images/css.png&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/html5.png&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/javascript.png&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/jquery.png&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div&gt;Back-End&lt;/div&gt;
+    &lt;div class=&quot;icon-list&quot;&gt;
+        &lt;img src=&quot;assets/built/images/mybatis.png&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/Apache-maven.jpg&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/Apache_Tomcat_Logo.png&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/Java.svg&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/oracleDB.png&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/sqlDeveloper.svg&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div&gt;개발 도구&lt;/div&gt;
+    &lt;div class=&quot;icon-list&quot;&gt;
+        &lt;img src=&quot;assets/built/images/springBoot.png&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/eclipse.jpeg&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/GitHub-Logo.png&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/vscode.svg&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/slack-ar21.svg&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    $(&apos;.slick-content&apos;).slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay : false,
+        arrows : true,
+        nextArrow : &quot;&lt;button class=&apos;slide-arrow slide-next&apos;&gt;&lt;span class=&apos;material-symbols-outlined&apos;&gt;arrow_forward_ios &lt;/span&gt;&lt;button&gt;&quot;,
+        prevArrow : &quot;&lt;button class=&apos;slide-arrow slide-prev&apos;&gt;&lt;span class=&apos;material-symbols-outlined&apos;&gt;arrow_back_ios&lt;/span&gt;&lt;button&gt;&quot;
+    });
+&lt;/script&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Concat0681</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="portfolios" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Sprip</title>
+      <link href="http://localhost:4000/portfolio-sprip" rel="alternate" type="text/html" title="Sprip" />
+      <published>2023-05-12T03:00:00+09:00</published>
+      <updated>2023-05-12T03:00:00+09:00</updated>
+      <id>http://localhost:4000/portfolio-sprip</id>
+      <content type="html" xml:base="http://localhost:4000/portfolio-sprip">&lt;style&gt;
+    .slide-arrow {
+        position : absolute;
+        top : 50%;
+        background-color : white;
+    }
+    .slide-arrow span{
+        font-size : 50px
+    }
+    .slide-next {
+        right : -55px;
+    }
+    .slide-prev{
+        left : -50px;
+    }
+    .icon-list{
+        display : flex;
+        justify-content : flex-start;
+    }
+    .icon-list&gt;img{
+        width : 100px;
+    }
+    .list-wrap{
+       width  : 100%
+    }
+    .description-box{
+        margin-left : 15px;
+        height : 600px;
+        overflow-y : auto;
+    }
+&lt;/style&gt;
+
+&lt;h4 id=&quot;제목--sprip&quot;&gt;제목 : Sprip&lt;/h4&gt;
+
+&lt;h4 id=&quot;기간--2023년-02월-24일--2023년-03월-10일&quot;&gt;기간 : 2023년 02월 24일 ~ 2023년 03월 10일&lt;/h4&gt;
+
+&lt;h4 id=&quot;인원--5명-기여율-25&quot;&gt;인원 : 5명 기여율 25%&lt;/h4&gt;
+
+&lt;h4 id=&quot;github--httpsgithubcomanew01teamtest&quot;&gt;GitHub : &lt;a href=&quot;https://github.com/Anew01/teamTest&quot;&gt;https://github.com/Anew01/teamTest&lt;/a&gt;&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css&quot; /&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css&quot; /&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;h4 id=&quot;담당기능&quot;&gt;담당기능&lt;/h4&gt;
+
+&lt;div class=&quot;slick-content&quot; style=&quot;width : 100%;&quot;&gt;
+    &lt;div style=&quot;display : flex;&quot;&gt;
+        &lt;img src=&quot;assets/built/images/sprip/sprip-1.png&quot; style=&quot;width : 50%; margin : 0&quot; /&gt;
+        &lt;div class=&quot;description-box&quot;&gt;
+            &lt;h4&gt;구현기능설명&lt;/h4&gt;&lt;br /&gt;
+
+            -스프립을 등록하는 페이지로 사진을 여러 개 등록할 수 있고 미리보기도 구현했습니다.&lt;br /&gt;&lt;br /&gt;
+
+            -여러 개의 이미지를 JavaScript에서 업로드하기 위해 FileItem 을 사용해 업로드 하였습니다.&lt;br /&gt;&lt;br /&gt;
+
+            -주소 입력 또한 다음(daum) 주소 API를 사용하였습니다.
+            &lt;br /&gt; -내용 입력 칸은 SummerNote를 사용하여 값을 받아오고 사진 또한 업로드 할 수 있습니다.&lt;br /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+     &lt;div style=&quot;display : flex;&quot;&gt;
+        &lt;img src=&quot;assets/built/images/sprip/sprip3.png&quot; style=&quot;width : 50%;  margin : 0&quot; /&gt;
+        &lt;div class=&quot;description-box&quot;&gt;
+            &lt;h4&gt;구현기능설명&lt;/h4&gt;&lt;br /&gt;
+            -호스트가 등록한 스프립들을 리스트 해 놓은 페이지로Carousel bootstrap을 사용하여 각 요소들마다 carousel을 적용하였습니다.&lt;br /&gt;&lt;br /&gt;
+            -스프립을 hover 시 Border-shadow 효과를 주어 클릭하고자 하는 요소를 강조 해주었습니다.
+        &lt;/div&gt;
+    &lt;/div&gt;
+     &lt;div style=&quot;display : flex;&quot;&gt;
+        &lt;img src=&quot;assets/built/images/sprip/sprip4.png&quot; style=&quot;width : 50%;  margin : 0&quot; /&gt;
+        &lt;div class=&quot;description-box&quot;&gt;
+            &lt;h4&gt;구현기능설명&lt;/h4&gt;&lt;br /&gt;
+            -수정, 삭제 기능이 있습니다.&lt;br /&gt;&lt;br /&gt;
+            -자신의 강의에 날짜와 인원을 설정해 줄 수 있습니다.&lt;br /&gt;&lt;br /&gt;
+            -DB에 테이블을 따로 만들어 날짜와 인원의 데이터를 관리합니다.&lt;br /&gt;&lt;br /&gt;
+            -이를 통해 다양한 날짜의 참여인원과 설정해 놓은 인원을 검색 할 수 있습니다.&lt;br /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;div&gt;&lt;h4&gt;개발 환경&lt;/h4&gt;&lt;/div&gt;
+
+&lt;div class=&quot;list-wrap&quot;&gt;
+    &lt;div&gt;Front-End&lt;/div&gt;
+    &lt;div class=&quot;icon-list&quot;&gt;
+        &lt;img src=&quot;assets/built/images/css.png&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/html5.png&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/javascript.png&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/jquery.png&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div&gt;Back-End&lt;/div&gt;
+    &lt;div class=&quot;icon-list&quot;&gt;
+        &lt;img src=&quot;assets/built/images/Apache_Tomcat_Logo.png&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/Java.svg&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/oracleDB.png&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/sqlDeveloper.svg&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div&gt;개발 도구&lt;/div&gt;
+    &lt;div class=&quot;icon-list&quot;&gt;
+        &lt;img src=&quot;assets/built/images/eclipse.jpeg&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/GitHub-Logo.png&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/vscode.svg&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/slack-ar21.svg&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    $(&apos;.slick-content&apos;).slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay : false,
+        arrows : true,
+        nextArrow : &quot;&lt;button class=&apos;slide-arrow slide-next&apos;&gt;&lt;span class=&apos;material-symbols-outlined&apos;&gt;arrow_forward_ios &lt;/span&gt;&lt;button&gt;&quot;,
+        prevArrow : &quot;&lt;button class=&apos;slide-arrow slide-prev&apos;&gt;&lt;span class=&apos;material-symbols-outlined&apos;&gt;arrow_back_ios&lt;/span&gt;&lt;button&gt;&quot;
+    });
+&lt;/script&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Concat0681</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="portfolios" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
