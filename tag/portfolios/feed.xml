@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/portfolios/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2023-05-16T18:51:20+09:00</updated>
+  <updated>2023-05-16T18:55:43+09:00</updated>
   <id>http://localhost:4000/tag/portfolios/feed.xml</id>
 
   
@@ -91,7 +91,7 @@
 
 &lt;div class=&quot;slick-content&quot; style=&quot;width : 100%;&quot;&gt;
     &lt;div style=&quot;display : flex;&quot;&gt;
-        &lt;img src=&quot;assets/built/images/sprip/sprip-1.png&quot; style=&quot;width : 50%; margin : 0&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/sprip/sprip-1.png&quot; style=&quot;width : 60%; margin : 0&quot; /&gt;
         &lt;div class=&quot;description-box&quot;&gt;
             &lt;h4&gt;구현기능설명&lt;/h4&gt;&lt;br /&gt;
 
@@ -104,7 +104,7 @@
         &lt;/div&gt;
     &lt;/div&gt;
      &lt;div style=&quot;display : flex;&quot;&gt;
-        &lt;img src=&quot;assets/built/images/sprip/sprip3.png&quot; style=&quot;width : 50%;  margin : 0&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/sprip/sprip3.png&quot; style=&quot;width : 60%;  margin : 0&quot; /&gt;
         &lt;div class=&quot;description-box&quot;&gt;
             &lt;h4&gt;구현기능설명&lt;/h4&gt;&lt;br /&gt;
             -호스트가 등록한 스프립들을 리스트 해 놓은 페이지로Carousel bootstrap을 사용하여 각 요소들마다 carousel을 적용하였습니다.&lt;br /&gt;&lt;br /&gt;
@@ -112,7 +112,7 @@
         &lt;/div&gt;
     &lt;/div&gt;
      &lt;div style=&quot;display : flex;&quot;&gt;
-        &lt;img src=&quot;assets/built/images/sprip/sprip4.png&quot; style=&quot;width : 50%;  margin : 0&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/sprip/sprip4.png&quot; style=&quot;width : 60%;  margin : 0&quot; /&gt;
         &lt;div class=&quot;description-box&quot;&gt;
             &lt;h4&gt;구현기능설명&lt;/h4&gt;&lt;br /&gt;
             -수정, 삭제 기능이 있습니다.&lt;br /&gt;&lt;br /&gt;
