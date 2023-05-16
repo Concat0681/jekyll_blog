@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/author/Concat0681/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2023-05-16T18:19:45+09:00</updated>
+  <updated>2023-05-16T18:25:36+09:00</updated>
   <id>http://localhost:4000/author/Concat0681/feed.xml</id>
 
   
@@ -68,6 +68,8 @@
         overflow-y : auto;
     }
 &lt;/style&gt;
+
+&lt;script src=&quot;http://code.jquery.com/jquery-latest.min.js&quot;&gt;&lt;/script&gt;
 
 &lt;h4 id=&quot;제목--camping-together&quot;&gt;제목 : Camping Together&lt;/h4&gt;
 
@@ -273,6 +275,8 @@
         overflow-y : auto;
     }
 &lt;/style&gt;
+
+&lt;script src=&quot;http://code.jquery.com/jquery-latest.min.js&quot;&gt;&lt;/script&gt;
 
 &lt;h4 id=&quot;제목--sprip&quot;&gt;제목 : Sprip&lt;/h4&gt;
 

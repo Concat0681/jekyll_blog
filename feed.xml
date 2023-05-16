@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-16T18:19:45+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Concat0681</title><subtitle>이상화의포토폴리오입니다.</subtitle><entry><title type="html">CampingTogether</title><link href="http://localhost:4000/portfolio-campingTogether" rel="alternate" type="text/html" title="CampingTogether" /><published>2023-05-12T03:00:00+09:00</published><updated>2023-05-12T03:00:00+09:00</updated><id>http://localhost:4000/portfolio-campingTogether</id><content type="html" xml:base="http://localhost:4000/portfolio-campingTogether">&lt;style&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-16T18:25:36+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Concat0681</title><subtitle>이상화의포토폴리오입니다.</subtitle><entry><title type="html">CampingTogether</title><link href="http://localhost:4000/portfolio-campingTogether" rel="alternate" type="text/html" title="CampingTogether" /><published>2023-05-12T03:00:00+09:00</published><updated>2023-05-12T03:00:00+09:00</updated><id>http://localhost:4000/portfolio-campingTogether</id><content type="html" xml:base="http://localhost:4000/portfolio-campingTogether">&lt;style&gt;
     .slide-arrow {
         position : absolute;
         top : 50%;
@@ -29,6 +29,8 @@
         overflow-y : auto;
     }
 &lt;/style&gt;
+
+&lt;script src=&quot;http://code.jquery.com/jquery-latest.min.js&quot;&gt;&lt;/script&gt;
 
 &lt;h4 id=&quot;제목--camping-together&quot;&gt;제목 : Camping Together&lt;/h4&gt;
 
@@ -200,6 +202,8 @@
         overflow-y : auto;
     }
 &lt;/style&gt;
+
+&lt;script src=&quot;http://code.jquery.com/jquery-latest.min.js&quot;&gt;&lt;/script&gt;
 
 &lt;h4 id=&quot;제목--sprip&quot;&gt;제목 : Sprip&lt;/h4&gt;
 
