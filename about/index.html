@@ -34,7 +34,7 @@
     <![endif]-->
     
     <!-- This tag outputs SEO meta+structured data and other important settings -->
-    <meta name="description" content="이상화의포토폴리오입니다." />
+    <meta name="description" content="이상화의 포토폴리오입니다." />
     <link rel="shortcut icon" href="http://localhost:4000/" type="image/png" />
     <link rel="canonical" href="http://localhost:4000/about/" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -44,7 +44,20 @@
     <meta property="og:site_name" content="Concat0681" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="About" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="{% for author in site.data.authors %}
+
+
+    
+    
+    {{ author[1].name }}
+    
+    KH정보교육원수료
+    전화번호 : {{ author[1].phone }}
+    이메일 : {{ author[1].email }}
+    GitHub : {{ site.owner.github }}
+
+{% endfor %}
+" />
     <meta property="og:url" content="http://localhost:4000/about/" />
     <meta property="og:image" content="http://localhost:4000/assets/images/blog-cover.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -53,7 +66,20 @@
     <meta property="article:modified_time" content="" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="About" />
-    <meta name="twitter:description" content="" />
+    <meta name="twitter:description" content="{% for author in site.data.authors %}
+
+
+    
+    
+    {{ author[1].name }}
+    
+    KH정보교육원수료
+    전화번호 : {{ author[1].phone }}
+    이메일 : {{ author[1].email }}
+    GitHub : {{ site.owner.github }}
+
+{% endfor %}
+" />
     <meta name="twitter:url" content="http://localhost:4000/" />
     <meta name="twitter:image" content="http://localhost:4000/assets/images/blog-cover.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -83,7 +109,20 @@
         "@type": "WebPage",
         "@id": "http://localhost:4000/about/"
     },
-    "description": ""
+    "description": "{% for author in site.data.authors %}
+
+
+    
+    
+    {{ author[1].name }}
+    
+    KH정보교육원수료
+    전화번호 : {{ author[1].phone }}
+    이메일 : {{ author[1].email }}
+    GitHub : {{ site.owner.github }}
+
+{% endfor %}
+"
 }
     </script>
 
@@ -157,6 +196,17 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 
+<div style="text-align : center;">
+    <section class="author-card-content">
+    <img class="author-profile-image" src="/assets/built/images/profile.jpg" alt="" style="width : 200px; height : 200px" />
+    <h4 class="author-card-name">이상화</h4>
+    </section>
+    <p>KH정보교육원수료</p>
+    <p>전화번호 : 010-8711-0681</p>
+    <p>이메일 : hls112347@gmail.com</p>
+    <p>GitHub : <a href="https://github.com/Concat0681">https://github.com/Concat0681</a></p>
+</div>
+
 
             </section>
 

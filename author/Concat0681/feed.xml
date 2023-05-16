@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/author/Concat0681/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2023-05-16T18:58:16+09:00</updated>
+  <updated>2023-05-16T20:16:13+09:00</updated>
   <id>http://localhost:4000/author/Concat0681/feed.xml</id>
 
   
@@ -16,7 +16,7 @@
   
 
   
-    <subtitle>이상화의포토폴리오입니다.</subtitle>
+    <subtitle>이상화의 포토폴리오입니다.</subtitle>
   
 
   
@@ -38,6 +38,9 @@
       <updated>2023-05-12T03:00:00+09:00</updated>
       <id>http://localhost:4000/portfolio-campingTogether</id>
       <content type="html" xml:base="http://localhost:4000/portfolio-campingTogether">&lt;style&gt;
+    .slick-content img{
+        height : 600px;
+    }
     .slide-arrow {
         position : absolute;
         top : 50%;
@@ -87,7 +90,7 @@
 
 &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js&quot;&gt;&lt;/script&gt;
 
-&lt;h4 id=&quot;담당기능&quot;&gt;담당기능&lt;/h4&gt;
+&lt;div&gt;&lt;h3&gt;담당기능&lt;/h3&gt;&lt;/div&gt;
 
 &lt;div class=&quot;slick-content&quot; style=&quot;width : 100%;&quot;&gt;
     &lt;div style=&quot;display : flex;&quot;&gt;
@@ -170,7 +173,7 @@
 &lt;/div&gt;
 &lt;hr /&gt;
 
-&lt;div&gt;&lt;h4&gt;개발 환경&lt;/h4&gt;&lt;/div&gt;
+&lt;div&gt;&lt;h3&gt;개발 환경&lt;/h3&gt;&lt;/div&gt;
 
 &lt;div class=&quot;list-wrap&quot;&gt;
     &lt;div&gt;Front-End&lt;/div&gt;
@@ -217,7 +220,9 @@
       
 
       <author>
-          <name>Concat0681</name>
+          <name>이상화</name>
+        
+          <email>hls112347@gmail.com</email>
         
         
       </author>
@@ -243,6 +248,11 @@
       <updated>2023-05-12T03:00:00+09:00</updated>
       <id>http://localhost:4000/portfolio-sprip</id>
       <content type="html" xml:base="http://localhost:4000/portfolio-sprip">&lt;style&gt;
+    .slick-content img{
+        margin : 0;
+        width : 60%;
+        height : 600px;
+    }
     .slide-arrow {
         position : absolute;
         top : 50%;
@@ -292,11 +302,11 @@
 
 &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js&quot;&gt;&lt;/script&gt;
 
-&lt;h4 id=&quot;담당기능&quot;&gt;담당기능&lt;/h4&gt;
+&lt;div&gt;&lt;h3&gt;담당기능&lt;/h3&gt;&lt;/div&gt;
 
 &lt;div class=&quot;slick-content&quot; style=&quot;width : 100%;&quot;&gt;
     &lt;div style=&quot;display : flex;&quot;&gt;
-        &lt;img src=&quot;assets/built/images/sprip/sprip-1.png&quot; style=&quot;width : 60%; margin : 0&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/sprip/sprip-1.png&quot; /&gt;
         &lt;div class=&quot;description-box&quot;&gt;
             &lt;h4&gt;구현기능설명&lt;/h4&gt;&lt;br /&gt;
 
@@ -309,7 +319,7 @@
         &lt;/div&gt;
     &lt;/div&gt;
      &lt;div style=&quot;display : flex;&quot;&gt;
-        &lt;img src=&quot;assets/built/images/sprip/sprip3.png&quot; style=&quot;width : 60%;  margin : 0&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/sprip/sprip3.png&quot; /&gt;
         &lt;div class=&quot;description-box&quot;&gt;
             &lt;h4&gt;구현기능설명&lt;/h4&gt;&lt;br /&gt;
             -호스트가 등록한 스프립들을 리스트 해 놓은 페이지로Carousel bootstrap을 사용하여 각 요소들마다 carousel을 적용하였습니다.&lt;br /&gt;&lt;br /&gt;
@@ -317,7 +327,7 @@
         &lt;/div&gt;
     &lt;/div&gt;
      &lt;div style=&quot;display : flex;&quot;&gt;
-        &lt;img src=&quot;assets/built/images/sprip/sprip4.png&quot; style=&quot;width : 60%;  margin : 0&quot; /&gt;
+        &lt;img src=&quot;assets/built/images/sprip/sprip4.png&quot; /&gt;
         &lt;div class=&quot;description-box&quot;&gt;
             &lt;h4&gt;구현기능설명&lt;/h4&gt;&lt;br /&gt;
             -수정, 삭제 기능이 있습니다.&lt;br /&gt;&lt;br /&gt;
@@ -330,7 +340,7 @@
 &lt;/div&gt;
 &lt;hr /&gt;
 
-&lt;div&gt;&lt;h4&gt;개발 환경&lt;/h4&gt;&lt;/div&gt;
+&lt;div&gt;&lt;h3&gt;개발 환경&lt;/h3&gt;&lt;/div&gt;
 
 &lt;div class=&quot;list-wrap&quot;&gt;
     &lt;div&gt;Front-End&lt;/div&gt;
@@ -374,7 +384,9 @@
       
 
       <author>
-          <name>Concat0681</name>
+          <name>이상화</name>
+        
+          <email>hls112347@gmail.com</email>
         
         
       </author>
