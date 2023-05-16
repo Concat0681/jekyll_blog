@@ -42,8 +42,6 @@
     }
 &lt;/style&gt;
 
-&lt;script src=&quot;http://code.jquery.com/jquery-latest.min.js&quot;&gt;&lt;/script&gt;
-
 </description>
         
         <pubDate>Fri, 12 May 2023 03:00:00 +0900</pubDate>
@@ -88,8 +86,6 @@
         overflow-y : auto;
     }
 &lt;/style&gt;
-
-&lt;script src=&quot;http://code.jquery.com/jquery-latest.min.js&quot;&gt;&lt;/script&gt;
 
 </description>
         
