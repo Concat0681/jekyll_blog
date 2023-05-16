@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/author/Concat0681/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2023-05-16T18:55:43+09:00</updated>
+  <updated>2023-05-16T18:58:16+09:00</updated>
   <id>http://localhost:4000/author/Concat0681/feed.xml</id>
 
   
@@ -47,10 +47,10 @@
         font-size : 50px
     }
     .slide-next {
-        right : -55px;
+        right : -70px;
     }
     .slide-prev{
-        left : -50px;
+        left : -70px;
     }
     .icon-list{
         display : flex;
@@ -252,10 +252,10 @@
         font-size : 50px
     }
     .slide-next {
-        right : -55px;
+        right : -70px;
     }
     .slide-prev{
-        left : -50px;
+        left : -70px;
     }
     .icon-list{
         display : flex;
