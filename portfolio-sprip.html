@@ -44,7 +44,7 @@
     <meta property="og:site_name" content="Concat0681" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Sprip" />
-    <meta property="og:description" content="제목 : Sprip 기간 : 2023년 02월 24일 ~ 2023년 03월 10일 인원 : 5명 기여율 25% GitHub : https://github.com/Anew01/teamTest 담당기능 구현기능설명 -스프립을 등록하는 페이지로 사진을 여러 개 등록할 수 있고 미리보기도 구현했습니다. -여러 개의 이미지를 JavaScript에서 업로드하기 위해 FileItem 을 사용해 업로드 하였습니다. -주소 입력 또한 다음(daum) 주소 API를" />
+    <meta property="og:description" content="제목 Sprip 기간 2023년 02월 24일 ~ 2023년 03월 10일 인원 5명 기여율 25% 개발목표 전국의 다양한 캠핑장을 소개하고, 실시간으로 예약할 수 있는 사이트 GitHub https://github.com/Anew01/teamTest 담당기능 구현기능설명 -스프립을 등록하는 페이지로 사진을 여러 개 등록할 수 있고 미리보기도 구현했습니다. -여러 개의 이미지를 JavaScript에서 업로드하기 위해 FileItem 을 사용해 업로드 하였습니다." />
     <meta property="og:url" content="http://localhost:4000/portfolio-sprip" />
     <meta property="og:image" content="http://localhost:4000/assets/built/images/Sprip.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -54,7 +54,7 @@
     <meta property="article:tag" content="Portfolios" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Sprip" />
-    <meta name="twitter:description" content="제목 : Sprip 기간 : 2023년 02월 24일 ~ 2023년 03월 10일 인원 : 5명 기여율 25% GitHub : https://github.com/Anew01/teamTest 담당기능 구현기능설명 -스프립을 등록하는 페이지로 사진을 여러 개 등록할 수 있고 미리보기도 구현했습니다. -여러 개의 이미지를 JavaScript에서 업로드하기 위해 FileItem 을 사용해 업로드 하였습니다. -주소 입력 또한 다음(daum) 주소 API를" />
+    <meta name="twitter:description" content="제목 Sprip 기간 2023년 02월 24일 ~ 2023년 03월 10일 인원 5명 기여율 25% 개발목표 전국의 다양한 캠핑장을 소개하고, 실시간으로 예약할 수 있는 사이트 GitHub https://github.com/Anew01/teamTest 담당기능 구현기능설명 -스프립을 등록하는 페이지로 사진을 여러 개 등록할 수 있고 미리보기도 구현했습니다. -여러 개의 이미지를 JavaScript에서 업로드하기 위해 FileItem 을 사용해 업로드 하였습니다." />
     <meta name="twitter:url" content="http://localhost:4000/" />
     <meta name="twitter:image" content="http://localhost:4000/assets/built/images/Sprip.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -86,7 +86,7 @@
         "@type": "WebPage",
         "@id": "http://localhost:4000/portfolio-sprip"
     },
-    "description": "제목 : Sprip 기간 : 2023년 02월 24일 ~ 2023년 03월 10일 인원 : 5명 기여율 25% GitHub : https://github.com/Anew01/teamTest 담당기능 구현기능설명 -스프립을 등록하는 페이지로 사진을 여러 개 등록할 수 있고 미리보기도 구현했습니다. -여러 개의 이미지를 JavaScript에서 업로드하기 위해 FileItem 을 사용해 업로드 하였습니다. -주소 입력 또한 다음(daum) 주소 API를"
+    "description": "제목 Sprip 기간 2023년 02월 24일 ~ 2023년 03월 10일 인원 5명 기여율 25% 개발목표 전국의 다양한 캠핑장을 소개하고, 실시간으로 예약할 수 있는 사이트 GitHub https://github.com/Anew01/teamTest 담당기능 구현기능설명 -스프립을 등록하는 페이지로 사진을 여러 개 등록할 수 있고 미리보기도 구현했습니다. -여러 개의 이미지를 JavaScript에서 업로드하기 위해 FileItem 을 사용해 업로드 하였습니다."
 }
     </script>
 
@@ -211,15 +211,32 @@ into the {body} of the default.hbs template -->
         height : 600px;
         overflow-y : auto;
     }
+    .portfolio-description{
+        width : 100%;
+        text-align : left;
+    }
 </style>
 
-<h4 id="제목--sprip">제목 : Sprip</h4>
-
-<h4 id="기간--2023년-02월-24일--2023년-03월-10일">기간 : 2023년 02월 24일 ~ 2023년 03월 10일</h4>
-
-<h4 id="인원--5명-기여율-25">인원 : 5명 기여율 25%</h4>
-
-<h4 id="github--httpsgithubcomanew01teamtest">GitHub : <a href="https://github.com/Anew01/teamTest">https://github.com/Anew01/teamTest</a></h4>
+<div class="portfolio-description">
+    <h4>제목</h4>  
+    <span>Sprip</span>
+</div>
+<div class="portfolio-description">
+    <h4>기간</h4> 
+    <span>2023년 02월 24일 ~ 2023년 03월 10일</span>
+</div>
+<div class="portfolio-description">
+    <h4>인원</h4> 
+    <span>5명 기여율 25%</span>
+</div>
+<div class="portfolio-description">
+    <h4>개발목표</h4> 
+    <span>전국의 다양한 캠핑장을 소개하고, 실시간으로 예약할 수 있는 사이트</span>
+</div>
+<div class="portfolio-description">
+    <h4>GitHub</h4> 
+    <a href="https://github.com/Anew01/teamTest">https://github.com/Anew01/teamTest</a>
+</div>
 
 <hr />
 
@@ -461,7 +478,7 @@ into the {body} of the default.hbs template -->
                         
                     
 
-                    <h2 class="post-card-title">(Java) MultipartFile를 이용한 파일업로드</h2>
+                    <h2 class="post-card-title">MultipartFile를 이용한 파일업로드</h2>
                 </header>
                 <section class="post-card-excerpt">
                     

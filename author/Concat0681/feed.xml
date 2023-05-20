@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/author/Concat0681/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2023-05-20T15:30:52+09:00</updated>
+  <updated>2023-05-20T16:15:54+09:00</updated>
   <id>http://localhost:4000/author/Concat0681/feed.xml</id>
 
   
@@ -32,10 +32,10 @@
 
   
     <entry>
-      <title type="html">(Java) MultipartFile를 이용한 파일업로드</title>
-      <link href="http://localhost:4000/frist-devDiary" rel="alternate" type="text/html" title="(Java) MultipartFile를 이용한 파일업로드" />
-      <published>2023-05-18T03:00:00+09:00</published>
-      <updated>2023-05-18T03:00:00+09:00</updated>
+      <title type="html">MultipartFile를 이용한 파일업로드</title>
+      <link href="http://localhost:4000/frist-devDiary" rel="alternate" type="text/html" title="MultipartFile를 이용한 파일업로드" />
+      <published>2023-05-19T03:00:00+09:00</published>
+      <updated>2023-05-19T03:00:00+09:00</updated>
       <id>http://localhost:4000/frist-devDiary</id>
       <content type="html" xml:base="http://localhost:4000/frist-devDiary">&lt;h2 id=&quot;1개요&quot;&gt;1.개요&lt;/h2&gt;
 
@@ -205,16 +205,37 @@
         height : 600px;
         overflow-y : auto;
     }
+    .description-box{
+        margin-left : 15px;
+        height : 600px;
+        overflow-y : auto;
+    }
+    .portfolio-description{
+        width : 100%;
+        text-align : left;
+    }
 &lt;/style&gt;
 
-&lt;h4 id=&quot;제목--camping-together&quot;&gt;제목 : Camping Together&lt;/h4&gt;
-
-&lt;h4 id=&quot;기간--2023년-03월-27일--2023년-05월-03일&quot;&gt;기간 : 2023년 03월 27일 ~ 2023년 05월 03일&lt;/h4&gt;
-
-&lt;h4 id=&quot;인원--6명-기여율-20&quot;&gt;인원 : 6명 기여율 20%&lt;/h4&gt;
-
-&lt;h4 id=&quot;github--httpsgithubcomconcat0681campingtogether_final&quot;&gt;GitHub : &lt;a href=&quot;https://github.com/Concat0681/CampingTogether_final&quot;&gt;https://github.com/Concat0681/CampingTogether_final&lt;/a&gt;&lt;/h4&gt;
-
+&lt;div class=&quot;portfolio-description&quot;&gt;
+    &lt;h4&gt;제목&lt;/h4&gt;  
+    &lt;span&gt;Camping Together&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;portfolio-description&quot;&gt;
+    &lt;h4&gt;기간&lt;/h4&gt; 
+    &lt;span&gt;2023년 03월 27일 ~ 2023년 05월 03일&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;portfolio-description&quot;&gt;
+    &lt;h4&gt;인원&lt;/h4&gt; 
+    &lt;span&gt;6명 기여율 20%&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;portfolio-description&quot;&gt;
+    &lt;h4&gt;개발목표&lt;/h4&gt; 
+    &lt;span&gt;전국의 다양한 캠핑장을 소개하고, 실시간으로 예약할 수 있는 사이트&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;portfolio-description&quot;&gt;
+    &lt;h4&gt;GitHub&lt;/h4&gt; 
+    &lt;a href=&quot;https://github.com/Concat0681/CampingTogether_final&quot;&gt;https://github.com/Concat0681/CampingTogether_final&lt;/a&gt;
+&lt;/div&gt;
 &lt;hr /&gt;
 
 &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css&quot; /&gt;
@@ -417,15 +438,32 @@
         height : 600px;
         overflow-y : auto;
     }
+    .portfolio-description{
+        width : 100%;
+        text-align : left;
+    }
 &lt;/style&gt;
 
-&lt;h4 id=&quot;제목--sprip&quot;&gt;제목 : Sprip&lt;/h4&gt;
-
-&lt;h4 id=&quot;기간--2023년-02월-24일--2023년-03월-10일&quot;&gt;기간 : 2023년 02월 24일 ~ 2023년 03월 10일&lt;/h4&gt;
-
-&lt;h4 id=&quot;인원--5명-기여율-25&quot;&gt;인원 : 5명 기여율 25%&lt;/h4&gt;
-
-&lt;h4 id=&quot;github--httpsgithubcomanew01teamtest&quot;&gt;GitHub : &lt;a href=&quot;https://github.com/Anew01/teamTest&quot;&gt;https://github.com/Anew01/teamTest&lt;/a&gt;&lt;/h4&gt;
+&lt;div class=&quot;portfolio-description&quot;&gt;
+    &lt;h4&gt;제목&lt;/h4&gt;  
+    &lt;span&gt;Sprip&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;portfolio-description&quot;&gt;
+    &lt;h4&gt;기간&lt;/h4&gt; 
+    &lt;span&gt;2023년 02월 24일 ~ 2023년 03월 10일&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;portfolio-description&quot;&gt;
+    &lt;h4&gt;인원&lt;/h4&gt; 
+    &lt;span&gt;5명 기여율 25%&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;portfolio-description&quot;&gt;
+    &lt;h4&gt;개발목표&lt;/h4&gt; 
+    &lt;span&gt;전국의 다양한 캠핑장을 소개하고, 실시간으로 예약할 수 있는 사이트&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;portfolio-description&quot;&gt;
+    &lt;h4&gt;GitHub&lt;/h4&gt; 
+    &lt;a href=&quot;https://github.com/Anew01/teamTest&quot;&gt;https://github.com/Anew01/teamTest&lt;/a&gt;
+&lt;/div&gt;
 
 &lt;hr /&gt;
 
