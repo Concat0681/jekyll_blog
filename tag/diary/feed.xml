@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/diary/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2023-05-20T15:27:10+09:00</updated>
+  <updated>2023-05-20T15:30:52+09:00</updated>
   <id>http://localhost:4000/tag/diary/feed.xml</id>
 
   
@@ -32,8 +32,8 @@
 
   
     <entry>
-      <title type="html">개발일기-1</title>
-      <link href="http://localhost:4000/frist-devDiary" rel="alternate" type="text/html" title="개발일기-1" />
+      <title type="html">(Java) MultipartFile를 이용한 파일업로드</title>
+      <link href="http://localhost:4000/frist-devDiary" rel="alternate" type="text/html" title="(Java) MultipartFile를 이용한 파일업로드" />
       <published>2023-05-18T03:00:00+09:00</published>
       <updated>2023-05-18T03:00:00+09:00</updated>
       <id>http://localhost:4000/frist-devDiary</id>
