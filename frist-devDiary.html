@@ -21,7 +21,6 @@
     <!-- highlight.js -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <style>.hljs { background: none; }</style>
-    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
     <!--[if IE]>
         <style>
             p, ol, ul{
@@ -44,17 +43,14 @@
     <meta property="og:site_name" content="Concat0681" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="MultipartFile를 이용한 파일업로드" />
-    <meta property="og:description" content="1.개요 스프링에서 제공하는 MultipartFile 이라는 인터페이스를 통해서 파일업로드 하는 방법에 대해서 알아봅시다. 2.FileManager Class FileManager란 클래스를 의존성 주입을 통해 (Annotation 사용) 따로 만들어 파일업로드와 삭제를 관리합니다. 매개변수로 저장공간주소와 MultipartFile를 받아 중복체크하고 중복시 뒤에 숫자를 붙입니다. 중복체크 뒤 FileOutputStream을 만들고 업로드 속도를 위해 보조스트림 BufferedOutputStream을 만들어 파일을 저장공간에 업로드합니다. @Component public" />
+    <meta property="og:description" content="이상화의 포토폴리오입니다." />
     <meta property="og:url" content="http://localhost:4000/frist-devDiary" />
     <meta property="og:image" content="http://localhost:4000/assets/built/images/devDiary/dev.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
-    <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2023-05-19T03:00:00+09:00" />
-    <meta property="article:modified_time" content="2023-05-19T03:00:00+09:00" />
     <meta property="article:tag" content="Diary" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="MultipartFile를 이용한 파일업로드" />
-    <meta name="twitter:description" content="1.개요 스프링에서 제공하는 MultipartFile 이라는 인터페이스를 통해서 파일업로드 하는 방법에 대해서 알아봅시다. 2.FileManager Class FileManager란 클래스를 의존성 주입을 통해 (Annotation 사용) 따로 만들어 파일업로드와 삭제를 관리합니다. 매개변수로 저장공간주소와 MultipartFile를 받아 중복체크하고 중복시 뒤에 숫자를 붙입니다. 중복체크 뒤 FileOutputStream을 만들고 업로드 속도를 위해 보조스트림 BufferedOutputStream을 만들어 파일을 저장공간에 업로드합니다. @Component public" />
+    <meta name="twitter:description" content="이상화의 포토폴리오입니다." />
     <meta name="twitter:url" content="http://localhost:4000/" />
     <meta name="twitter:image" content="http://localhost:4000/assets/built/images/devDiary/dev.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -63,8 +59,8 @@
     <meta name="twitter:data2" content="Diary" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
-    <meta property="og:image:width" content="1400" />
-    <meta property="og:image:height" content="933" />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="666" />
 
     <script type="application/ld+json">
 {
@@ -86,7 +82,7 @@
         "@type": "WebPage",
         "@id": "http://localhost:4000/frist-devDiary"
     },
-    "description": "1.개요 스프링에서 제공하는 MultipartFile 이라는 인터페이스를 통해서 파일업로드 하는 방법에 대해서 알아봅시다. 2.FileManager Class FileManager란 클래스를 의존성 주입을 통해 (Annotation 사용) 따로 만들어 파일업로드와 삭제를 관리합니다. 매개변수로 저장공간주소와 MultipartFile를 받아 중복체크하고 중복시 뒤에 숫자를 붙입니다. 중복체크 뒤 FileOutputStream을 만들고 업로드 속도를 위해 보조스트림 BufferedOutputStream을 만들어 파일을 저장공간에 업로드합니다. @Component public"
+    "description": "이상화의 포토폴리오입니다."
 }
     </script>
 
@@ -102,7 +98,7 @@
     <link rel="alternate" type="application/rss+xml" title="MultipartFile를 이용한 파일업로드" href="/feed.xml" />
 
 </head>
-<body class="post-template">
+<body class="diary-template">
 
     <div class="site-wrapper">
         <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
@@ -150,7 +146,7 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full  tag-diary tag-java post tag-devDiary ">
+        <article class="post-full  tag-diary tag-java post tag-diary ">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
@@ -168,15 +164,15 @@ into the {body} of the default.hbs template -->
                         
                     
                 </section>
-                <h1 class="post-full-title">MultipartFile를 이용한 파일업로드</h1>
+                <h1 class="post-full-title" style="margin-top: 50px;">MultipartFile를 이용한 파일업로드</h1>
             </header>
 
-            <!-- 
-                
-                <figure class="post-full-image" style="background-image: url(/assets/built/images/devDiary/dev.jpg)">
-                </figure>
-                
-            -->
+        
+            
+            <figure class="post-full-image" style="background-image: url(/assets/built/images/devDiary/dev.jpg); height : 400px;">
+            </figure>
+            
+         
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
@@ -394,6 +390,25 @@ into the {body} of the default.hbs template -->
                 <section class="post-card-excerpt">
                     
                         <p>
+    제목  
+    Sprip
+
+
+    기간 
+    2023년 02월 24일 ~ 2023년 03월 10일
+
+
+    인원 
+    5명 기여율 25%
+
+
+    개발목표 
+    전국의 다양한 캠핑장을 소개하고, 실시간으로 예약할 수 있는 사이트
+
+
+    GitHub 
+    https://github.com/Anew01/teamTest
+
 
 </p>
                     
@@ -543,71 +558,6 @@ into the {body} of the default.hbs template -->
 
 
     <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
-    
-        <script>
-
-// NOTE: Scroll performance is poor in Safari
-// - this appears to be due to the events firing much more slowly in Safari.
-//   Dropping the scroll event and using only a raf loop results in smoother
-//   scrolling but continuous processing even when not scrolling
-$(document).ready(function () {
-    // Start fitVids
-    var $postContent = $(".post-full-content");
-    $postContent.fitVids();
-    // End fitVids
-
-    var progressBar = document.querySelector('progress');
-    var header = document.querySelector('.floating-header');
-    var title = document.querySelector('.post-full-title');
-
-    var lastScrollY = window.scrollY;
-    var lastWindowHeight = window.innerHeight;
-    var lastDocumentHeight = $(document).height();
-    var ticking = false;
-
-    function onScroll() {
-        lastScrollY = window.scrollY;
-        requestTick();
-    }
-
-    function onResize() {
-        lastWindowHeight = window.innerHeight;
-        lastDocumentHeight = $(document).height();
-        requestTick();
-    }
-
-    function requestTick() {
-        if (!ticking) {
-            requestAnimationFrame(update);
-        }
-        ticking = true;
-    }
-
-    function update() {
-        var trigger = title.getBoundingClientRect().top + window.scrollY;
-        var triggerOffset = title.offsetHeight + 35;
-        var progressMax = lastDocumentHeight - lastWindowHeight;
-
-        // show/hide floating header
-        if (lastScrollY >= trigger + triggerOffset) {
-            header.classList.add('floating-active');
-        } else {
-            header.classList.remove('floating-active');
-        }
-
-        progressBar.setAttribute('max', progressMax);
-        progressBar.setAttribute('value', lastScrollY);
-
-        ticking = false;
-    }
-
-    window.addEventListener('scroll', onScroll, {passive: true});
-    window.addEventListener('resize', onResize, false);
-
-    update();
-});
-</script>
-
     
 
     <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->

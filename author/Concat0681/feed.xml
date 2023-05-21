@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/author/Concat0681/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2023-05-20T16:15:54+09:00</updated>
+  <updated>2023-05-21T14:59:38+09:00</updated>
   <id>http://localhost:4000/author/Concat0681/feed.xml</id>
 
   
@@ -172,51 +172,7 @@
       <published>2023-05-12T03:00:00+09:00</published>
       <updated>2023-05-12T03:00:00+09:00</updated>
       <id>http://localhost:4000/portfolio-campingTogether</id>
-      <content type="html" xml:base="http://localhost:4000/portfolio-campingTogether">&lt;style&gt;
-    .slick-content img{
-        height : 600px;
-    }
-    .slide-arrow {
-        position : absolute;
-        top : 50%;
-        background-color : white;
-    }
-    .slide-arrow span{
-        font-size : 50px
-    }
-    .slide-next {
-        right : -70px;
-    }
-    .slide-prev{
-        left : -70px;
-    }
-    .icon-list{
-        display : flex;
-        justify-content : flex-start;
-    }
-    .icon-list&gt;img{
-        width : 100px;
-    }
-    .list-wrap{
-       width  : 100%
-    }
-    .description-box{
-        margin-left : 15px;
-        height : 600px;
-        overflow-y : auto;
-    }
-    .description-box{
-        margin-left : 15px;
-        height : 600px;
-        overflow-y : auto;
-    }
-    .portfolio-description{
-        width : 100%;
-        text-align : left;
-    }
-&lt;/style&gt;
-
-&lt;div class=&quot;portfolio-description&quot;&gt;
+      <content type="html" xml:base="http://localhost:4000/portfolio-campingTogether">&lt;div class=&quot;portfolio-description&quot;&gt;
     &lt;h4&gt;제목&lt;/h4&gt;  
     &lt;span&gt;Camping Together&lt;/span&gt;
 &lt;/div&gt;
@@ -390,7 +346,7 @@
       
 
       
-        <summary type="html"></summary>
+        <summary type="html">제목 Camping Together 기간 2023년 03월 27일 ~ 2023년 05월 03일 인원 6명 기여율 20% 개발목표 전국의 다양한 캠핑장을 소개하고, 실시간으로 예약할 수 있는 사이트 GitHub https://github.com/Concat0681/CampingTogether_final</summary>
       
 
       
@@ -403,48 +359,7 @@
       <published>2023-05-12T03:00:00+09:00</published>
       <updated>2023-05-12T03:00:00+09:00</updated>
       <id>http://localhost:4000/portfolio-sprip</id>
-      <content type="html" xml:base="http://localhost:4000/portfolio-sprip">&lt;style&gt;
-    .slick-content img{
-        margin : 0;
-        width : 60%;
-        height : 600px;
-    }
-    .slide-arrow {
-        position : absolute;
-        top : 50%;
-        background-color : white;
-    }
-    .slide-arrow span{
-        font-size : 50px
-    }
-    .slide-next {
-        right : -70px;
-    }
-    .slide-prev{
-        left : -70px;
-    }
-    .icon-list{
-        display : flex;
-        justify-content : flex-start;
-    }
-    .icon-list&gt;img{
-        width : 100px;
-    }
-    .list-wrap{
-       width  : 100%
-    }
-    .description-box{
-        margin-left : 15px;
-        height : 600px;
-        overflow-y : auto;
-    }
-    .portfolio-description{
-        width : 100%;
-        text-align : left;
-    }
-&lt;/style&gt;
-
-&lt;div class=&quot;portfolio-description&quot;&gt;
+      <content type="html" xml:base="http://localhost:4000/portfolio-sprip">&lt;div class=&quot;portfolio-description&quot;&gt;
     &lt;h4&gt;제목&lt;/h4&gt;  
     &lt;span&gt;Sprip&lt;/span&gt;
 &lt;/div&gt;
@@ -571,7 +486,7 @@
       
 
       
-        <summary type="html"></summary>
+        <summary type="html">제목 Sprip 기간 2023년 02월 24일 ~ 2023년 03월 10일 인원 5명 기여율 25% 개발목표 전국의 다양한 캠핑장을 소개하고, 실시간으로 예약할 수 있는 사이트 GitHub https://github.com/Anew01/teamTest</summary>
       
 
       
