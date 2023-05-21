@@ -8,6 +8,53 @@
     
       
       <item>
+        <title>OpenWeatherMap api를 이용한 날씨 예보</title>
+        
+          <description>&lt;style&gt;
+    #cityBtn{
+        border: none;
+        background-color: skyblue;
+        border-radius : 10px;
+        color : white;
+        font-size : 18px;
+    }
+    #cityBtn:hover{
+        background-color : white;
+        color : black;
+    }
+    .weather-result{
+        width : 100%;
+        text-align: center;
+        margin-top : 50px;
+    }
+    .weather-list{
+        width : 100%;
+        display : flex;
+        justify-content: space-around;
+    }
+    .weather-icon{
+        width: 100px;
+    }
+    .cityName{
+        font-size : 30px;
+        font-weight : bold;
+    }
+    ul{
+        margin-top : 30px;
+    }
+&lt;/style&gt;
+
+</description>
+        
+        <pubDate>Fri, 19 May 2023 03:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/openWeather-api</link>
+        <guid isPermaLink="true">http://localhost:4000/openWeather-api</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>MultipartFile를 이용한 파일업로드</title>
         
           <description>&lt;h2 id=&quot;1개요&quot;&gt;1.개요&lt;/h2&gt;
