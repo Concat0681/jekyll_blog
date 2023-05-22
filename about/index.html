@@ -203,7 +203,7 @@ into the {body} of the default.hbs template -->
         color: black;
     }
     .slide-item{
-        margin-top: 150px;
+        margin-top: 100px;
     }
     .post-full>.post-full-content{
         background-color: inherit;
@@ -221,13 +221,28 @@ into the {body} of the default.hbs template -->
         display: flex;
         flex-wrap : wrap;
     }
-    .skill-list>div{
+    .skill-list>.skill-menu-clicked{
+        background-color: grey;
+    }
+    .skill-menu{
         width: fit-content;
         padding : 0 10px;
         margin: 10px 0;
         margin-right : 20px;
         background-color : #dedede;
         border-radius: 15px;
+    }
+    .skill-title{
+        font-size: 25px;
+        margin: 10px 0;
+        font-weight: bold;
+    }
+    .skill-content{
+        line-height: 50px;
+        text-align: left;
+        height: 285px;
+        overflow-y: auto;
+        padding: 10px;
     }
 </style>
 
@@ -257,13 +272,51 @@ into the {body} of the default.hbs template -->
             </div>
             <div class="slide-item hidden">
                 <div class="skill-list">
-                    <div>Java</div>
-                    <div>JavaScript</div>
-                    <div>JQuery</div>
-                    <div>Css</div>
-                    <div>HTML</div>
-                    <div>Spring Framwork</div>
-                    <div>Oracle DB</div>
+                    <div class="skill-menu skill-menu-clicked">Java</div>
+                    <div class="skill-menu">JavaScript</div>
+                    <div class="skill-menu">Css, HTML</div>
+                    <div class="skill-menu">Spring Framwork</div>
+                    <div class="skill-menu">Oracle DB</div>
+                </div>
+                <div class="slide-skill">
+                    <div class="skill-title">Java</div>
+                    <div class="skill-content">
+                        -변수, 연산자, 조건문, 배열 활용하여 로직이 가능합니다.<br />
+                        -클래스와 메서드의 정의 및 테스트, 주어진 클래스를 활용한 로직 구현이 가능합니다. 상속, 추상클래스를 활용한 기본적인 로직 구현이 가능합니다.<br />
+                        -기본적인 예외처리 활용이 가능합니다.<br />
+                        -유용한 클래스를 활용하여 로직이 가능합니다.<br />
+                        -기본적인 쓰레드를 이용한 로직 가능합니다.<br />
+                        -기본적인 IO클래스를 이용한 로직이 가능합니다.<br />
+                        -기본적인 네트워크 프로그램을 이용한 로직이 가능합니다
+                    </div>
+                    <div class="skill-content hidden">
+                        - HTML 페이지 변경 및 HTML 엘리먼트와 콘텐츠의 추가나 제거를 할 수 있습니다.<br />
+                        - 선택자를 이용해 태그에 css나 마우스와 키보드 이벤트에 대한 스크립트 실행을 적용할수 있습니다.<br />
+                        - 폼의 유효성 검증또한 할 수 있습니다.<br />
+                        - jQuery 문법에 $를 이용하거나 .text() 같은 jQuery 문법들을 사용할 수 있습니다<br />
+                        - Ajax를 이용해 JSON형태나 Form-data 같은 형테의 데이터를 보내거나 받을수 있습니다.
+                    </div>
+                    <div class="skill-content hidden">    
+                        - 다양한 태그를 이용해 HTML을 작성할 수 있습니다.<br />
+                        - Script나 Css 소스 파일을 만들어 연결 시킬 수 있습니다.<br />
+                        - 불러온 이미지 주소를 이미지 태그 소스에 적용시켜 이미지를 불러올 수 있습니다.<br />
+                        - Flex를 이용한 다양한 디자인이 가능 합니다.<br />
+                        - Animation 이나 Transform 효과를 이용해 기본적인 움직이는 효과를 만들수 있습니다
+                    </div>
+                    <div class="skill-content hidden">
+                        - interceptor를이용하여미로그인시접속불가처리사용 -암호화를사용하여회원가입및로그인기능구현<br />
+                        - redirect 요청 사용 시 redirectAttribute 를 사용하여 파라메터 주고 받기 가능 - @ResponseBody 사용하여 ajax 로 게시글리스트를 보여주기 구현<br />
+                        - 다이내믹 쿼리 사용하여 검색기능 구현<br />
+                        - 트랜잭션을 활용한 조회수 올리기 구현<br />  -파일업로드를활용한게시글작성및수정,삭제기능구현<br />
+                        - Maven을 활용한 라이브러리를 관리 할수 있습니다<br />
+                        - MyBaits를 이용해 복잡한 쿼리나 다이나믹한 쿼리를 사용할수 있습니다. ResultMap을 이용해 계층형 데이터 구조를 불러올 수 있습니다.
+                    </div>
+                    <div class="skill-content hidden">       
+                        - 서브쿼리를 활용하여 데이터 사용 가능합니다.<br />
+                        - join 문을 활용하여 제약조건이 연관되있는 테이블에서 데이터 사용가능합니다.<br />
+                        - 정규화를 고려한 기초적인 DB설계 가능합니다.<br />
+                        -테이블생성 및 컬럼값 변경을 할 수 있습니다
+                    </div>
                 </div>
             </div>
         </div>
@@ -277,6 +330,17 @@ into the {body} of the default.hbs template -->
         $(this).addClass("menu-clicked");
         $(".slide-item").addClass("hidden");
         $(".slide-item").eq(index).removeClass("hidden");
+    });
+
+    $(".skill-menu").on("click", function(){
+        const index = $(".skill-menu").index(this);
+        $(".skill-menu").removeClass("skill-menu-clicked");
+        $(this).addClass("skill-menu-clicked");
+        $(".skill-title").empty();
+        $(".skill-title").text($(this).text());
+        $(".skill-content").addClass("hidden");
+        $(".skill-content").eq(index).removeClass("hidden");
+        console.log($(this).text())
     })
 </script>
 
