@@ -203,6 +203,7 @@ into the {body} of the default.hbs template -->
         color: black;
     }
     .slide-item{
+        position: absolute;
         margin-top: 100px;
     }
     .post-full>.post-full-content{
@@ -223,6 +224,7 @@ into the {body} of the default.hbs template -->
     }
     .skill-list>.skill-menu-clicked{
         background-color: grey;
+        color: #dedede;
     }
     .skill-menu{
         width: fit-content;
@@ -237,7 +239,11 @@ into the {body} of the default.hbs template -->
         margin: 10px 0;
         font-weight: bold;
     }
+    .slide-skill{
+        postion: relative;
+    }
     .skill-content{
+        position: absolute;
         line-height: 50px;
         text-align: left;
         height: 285px;
@@ -386,7 +392,9 @@ $(function() {
     </div>
 
     <!-- The big email subscribe modal content -->
-    
+    <!--
+
+        
         <div id="subscribe" class="subscribe-overlay">
             <a class="subscribe-overlay-close" href="#"></a>
             <div class="subscribe-overlay-content">
@@ -405,7 +413,8 @@ $(function() {
 
             </div>
         </div>
-    
+        
+    -->
 
     <!-- jQuery + Fitvids, which makes all video embeds responsive -->
     <script
