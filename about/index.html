@@ -43,19 +43,7 @@
     <meta property="og:site_name" content="Concat0681" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="About" />
-    <meta property="og:description" content="{% for author in site.data.authors %}
-
-
-    
-    
-    {{ author[1].name }}
-    
-    전화번호 : {{ author[1].phone }}
-    이메일 : {{ author[1].email }}
-    GitHub : {{ site.owner.github }}
-
-{% endfor %}
-" />
+    <meta property="og:description" content="{% for author in site.data.authors %} {{ author[1].name }} 전화번호 : {{ author[1].phone }} 이메일 : {{ author[1].email }} GitHub : {{ site.owner.github }} 자기소개 Skills 현실에 안주하지 않고 늘 발전하는 개발자입니다 저는 문제해결에 대한 열정과 끈기를 가지고 있습니다. 또한 집중력과 책임감을 바탕으로 프로젝트의 성공을 위해 필요한 프로젝트 마감일까지의 업무" />
     <meta property="og:url" content="http://localhost:4000/about/" />
     <meta property="og:image" content="http://localhost:4000/assets/images/blog-cover.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -64,19 +52,7 @@
     <meta property="article:modified_time" content="" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="About" />
-    <meta name="twitter:description" content="{% for author in site.data.authors %}
-
-
-    
-    
-    {{ author[1].name }}
-    
-    전화번호 : {{ author[1].phone }}
-    이메일 : {{ author[1].email }}
-    GitHub : {{ site.owner.github }}
-
-{% endfor %}
-" />
+    <meta name="twitter:description" content="{% for author in site.data.authors %} {{ author[1].name }} 전화번호 : {{ author[1].phone }} 이메일 : {{ author[1].email }} GitHub : {{ site.owner.github }} 자기소개 Skills 현실에 안주하지 않고 늘 발전하는 개발자입니다 저는 문제해결에 대한 열정과 끈기를 가지고 있습니다. 또한 집중력과 책임감을 바탕으로 프로젝트의 성공을 위해 필요한 프로젝트 마감일까지의 업무" />
     <meta name="twitter:url" content="http://localhost:4000/" />
     <meta name="twitter:image" content="http://localhost:4000/assets/images/blog-cover.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -106,19 +82,7 @@
         "@type": "WebPage",
         "@id": "http://localhost:4000/about/"
     },
-    "description": "{% for author in site.data.authors %}
-
-
-    
-    
-    {{ author[1].name }}
-    
-    전화번호 : {{ author[1].phone }}
-    이메일 : {{ author[1].email }}
-    GitHub : {{ site.owner.github }}
-
-{% endfor %}
-"
+    "description": "{% for author in site.data.authors %} {{ author[1].name }} 전화번호 : {{ author[1].phone }} 이메일 : {{ author[1].email }} GitHub : {{ site.owner.github }} 자기소개 Skills 현실에 안주하지 않고 늘 발전하는 개발자입니다 저는 문제해결에 대한 열정과 끈기를 가지고 있습니다. 또한 집중력과 책임감을 바탕으로 프로젝트의 성공을 위해 필요한 프로젝트 마감일까지의 업무"
 }
     </script>
 
@@ -188,16 +152,133 @@ into the {body} of the default.hbs template -->
             
 
             <section class="post-full-content">
-                
-<div style="text-align : center;">
-    <section class="author-card-content">
-    <img class="author-profile-image" src="/assets/built/images/profile.jpg" alt="" style="width : 200px; height : 200px" />
-    <h4 class="author-card-name">이상화</h4>
-    </section>
-    <p>전화번호 : 010-8711-0681</p>
-    <p>이메일 : hls112347@gmail.com</p>
-    <p>GitHub : <a href="https://github.com/Concat0681">https://github.com/Concat0681</a></p>
+                <style>
+    #site-main{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 50px;
+        width: 100%;
+        background: linear-gradient(100deg, rgb(236, 213, 232) 0%, rgb(50, 112, 118) 100%)
+    }
+
+    .slider{
+        width: 100%;
+    }
+    
+    .slider-container{
+        display: flex;
+    }
+    .slider-container>div{
+        height: 600px;
+        text-align: center;
+        box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
+    }
+    .profile-content{
+        min-width: 400px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .slide-content{
+        position: relative;
+        min-width: 700px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding : 30px 40px;
+    }
+    .slide-menu-box{
+        position: absolute;
+        display: flex;
+    }
+    .slide-menu{
+        width: 150px;
+        font-size: 30px;
+        color: grey;
+    }
+    .slide-menu:hover{
+        font-size: 1.5em;
+    }
+    .menu-clicked{
+        font-size: 1.5em;
+        font-weight: bolder;
+        color: black;
+    }
+    .slide-item{
+        margin-top: 150px;
+    }
+    .post-full>.post-full-content{
+        background-color: inherit;
+        padding: 0; 
+    }
+    .profile-info{
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+    }
+    .slider-item>p{
+        text-align: left;
+    }
+    .skill-list{
+        display: flex;
+        flex-wrap : wrap;
+    }
+    .skill-list>div{
+        width: fit-content;
+        padding : 0 10px;
+        margin: 10px 0;
+        margin-right : 20px;
+        background-color : #dedede;
+        border-radius: 15px;
+    }
+</style>
+
+<div class="slider">
+    <div class="slider-container">
+        <div class="profile-content">
+            <section class="author-card-content">
+            <img class="author-profile-image" src="/assets/built/images/profile.jpg" alt="" style="width : 150px; height : 150px" />
+            <h4 class="author-card-name" style="margin-bottom: 20px;">이상화</h4>
+            </section> 
+            <div class="profile-info"> 
+                <p>전화번호 : 010-8711-0681</p>
+                <p>이메일 : hls112347@gmail.com</p>
+                <p>GitHub : <a href="https://github.com/Concat0681">https://github.com/Concat0681</a></p>
+            </div>
+        </div>
+        <div class="slide-content">
+            <div class="slide-menu-box">
+                <div class="slide-menu menu-clicked">자기소개</div>
+                <div class="slide-menu">Skills</div>
+            </div>
+            <div class="slide-item">
+                <h6>현실에 안주하지 않고 늘 발전하는 개발자입니다</h6>
+                <br /><br />
+                <p>저는 문제해결에 대한 열정과 끈기를 가지고 있습니다. 또한 집중력과 책임감을 바탕으로 프로젝트의 성공을 위해 필요한 프로젝트 마감일까지의 업무 완료와 필요한 작업의 우선순위를 잘 파악하고 동료와의 협업을 중요하게 생각합니다.<br />
+                이러한 제 장점들을 이용해 회사에서도 좋은 팀원, 능력 있는 팀원이 되기 위해 노력하겠습니다.</p>
+            </div>
+            <div class="slide-item hidden">
+                <div class="skill-list">
+                    <div>Java</div>
+                    <div>JavaScript</div>
+                    <div>JQuery</div>
+                    <div>Css</div>
+                    <div>HTML</div>
+                    <div>Spring Framwork</div>
+                    <div>Oracle DB</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<script>
+    $(".slide-menu").on("click", function(){
+        const index = $(".slide-menu").index(this);
+        $(".slide-menu").removeClass("menu-clicked");
+        $(this).addClass("menu-clicked");
+        $(".slide-item").addClass("hidden");
+        $(".slide-item").eq(index).removeClass("hidden");
+    })
+</script>
 
 
             </section>
