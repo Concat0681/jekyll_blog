@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
-  <link href="http://localhost:4000/tag/portfolios/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2023-05-23T16:23:52+09:00</updated>
-  <id>http://localhost:4000/tag/portfolios/feed.xml</id>
+  <link href="http://localhost:4000/jekyll_blog/tag/portfolios/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/jekyll_blog/" rel="alternate" type="text/html" />
+  <updated>2023-05-23T16:26:35+09:00</updated>
+  <id>http://localhost:4000/jekyll_blog/tag/portfolios/feed.xml</id>
 
   
   
@@ -33,11 +33,11 @@
   
     <entry>
       <title type="html">Sprip</title>
-      <link href="http://localhost:4000/portfolio-sprip" rel="alternate" type="text/html" title="Sprip" />
+      <link href="http://localhost:4000/jekyll_blog/portfolio-sprip" rel="alternate" type="text/html" title="Sprip" />
       <published>2023-05-12T03:00:00+09:00</published>
       <updated>2023-05-12T03:00:00+09:00</updated>
-      <id>http://localhost:4000/portfolio-sprip</id>
-      <content type="html" xml:base="http://localhost:4000/portfolio-sprip">&lt;div class=&quot;portfolio-description&quot;&gt;
+      <id>http://localhost:4000/jekyll_blog/portfolio-sprip</id>
+      <content type="html" xml:base="http://localhost:4000/jekyll_blog/portfolio-sprip">&lt;div class=&quot;portfolio-description&quot;&gt;
     &lt;h4&gt;제목&lt;/h4&gt;  
     &lt;span&gt;Sprip&lt;/span&gt;
 &lt;/div&gt;
@@ -173,11 +173,11 @@
   
     <entry>
       <title type="html">CampingTogether</title>
-      <link href="http://localhost:4000/portfolio-campingTogether" rel="alternate" type="text/html" title="CampingTogether" />
+      <link href="http://localhost:4000/jekyll_blog/portfolio-campingTogether" rel="alternate" type="text/html" title="CampingTogether" />
       <published>2023-05-12T03:00:00+09:00</published>
       <updated>2023-05-12T03:00:00+09:00</updated>
-      <id>http://localhost:4000/portfolio-campingTogether</id>
-      <content type="html" xml:base="http://localhost:4000/portfolio-campingTogether">&lt;div class=&quot;portfolio-description&quot;&gt;
+      <id>http://localhost:4000/jekyll_blog/portfolio-campingTogether</id>
+      <content type="html" xml:base="http://localhost:4000/jekyll_blog/portfolio-campingTogether">&lt;div class=&quot;portfolio-description&quot;&gt;
     &lt;h4&gt;제목&lt;/h4&gt;  
     &lt;span&gt;Camping Together&lt;/span&gt;
 &lt;/div&gt;

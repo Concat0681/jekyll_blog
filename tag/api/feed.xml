@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
-  <link href="http://localhost:4000/tag/api/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2023-05-23T16:23:52+09:00</updated>
-  <id>http://localhost:4000/tag/api/feed.xml</id>
+  <link href="http://localhost:4000/jekyll_blog/tag/api/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/jekyll_blog/" rel="alternate" type="text/html" />
+  <updated>2023-05-23T16:26:35+09:00</updated>
+  <id>http://localhost:4000/jekyll_blog/tag/api/feed.xml</id>
 
   
   
@@ -33,11 +33,11 @@
   
     <entry>
       <title type="html">OpenWeatherMap api를 이용한 날씨 예보</title>
-      <link href="http://localhost:4000/openWeather-api" rel="alternate" type="text/html" title="OpenWeatherMap api를 이용한 날씨 예보" />
+      <link href="http://localhost:4000/jekyll_blog/openWeather-api" rel="alternate" type="text/html" title="OpenWeatherMap api를 이용한 날씨 예보" />
       <published>2023-05-21T03:00:00+09:00</published>
       <updated>2023-05-21T03:00:00+09:00</updated>
-      <id>http://localhost:4000/openWeather-api</id>
-      <content type="html" xml:base="http://localhost:4000/openWeather-api">&lt;style&gt;
+      <id>http://localhost:4000/jekyll_blog/openWeather-api</id>
+      <content type="html" xml:base="http://localhost:4000/jekyll_blog/openWeather-api">&lt;style&gt;
     #cityBtn{
         border: none;
         background-color: skyblue;

@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
-  <link href="http://localhost:4000/author/Concat0681/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2023-05-23T16:23:52+09:00</updated>
-  <id>http://localhost:4000/author/Concat0681/feed.xml</id>
+  <link href="http://localhost:4000/jekyll_blog/author/Concat0681/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/jekyll_blog/" rel="alternate" type="text/html" />
+  <updated>2023-05-23T16:26:35+09:00</updated>
+  <id>http://localhost:4000/jekyll_blog/author/Concat0681/feed.xml</id>
 
   
   
@@ -33,11 +33,11 @@
   
     <entry>
       <title type="html">OpenWeatherMap api를 이용한 날씨 예보</title>
-      <link href="http://localhost:4000/openWeather-api" rel="alternate" type="text/html" title="OpenWeatherMap api를 이용한 날씨 예보" />
+      <link href="http://localhost:4000/jekyll_blog/openWeather-api" rel="alternate" type="text/html" title="OpenWeatherMap api를 이용한 날씨 예보" />
       <published>2023-05-21T03:00:00+09:00</published>
       <updated>2023-05-21T03:00:00+09:00</updated>
-      <id>http://localhost:4000/openWeather-api</id>
-      <content type="html" xml:base="http://localhost:4000/openWeather-api">&lt;style&gt;
+      <id>http://localhost:4000/jekyll_blog/openWeather-api</id>
+      <content type="html" xml:base="http://localhost:4000/jekyll_blog/openWeather-api">&lt;style&gt;
     #cityBtn{
         border: none;
         background-color: skyblue;
@@ -280,11 +280,11 @@ $(&quot;#cityBtn&quot;).on(&quot;click&quot;, function(){
   
     <entry>
       <title type="html">MultipartFile를 이용한 파일업로드</title>
-      <link href="http://localhost:4000/frist-devDiary" rel="alternate" type="text/html" title="MultipartFile를 이용한 파일업로드" />
+      <link href="http://localhost:4000/jekyll_blog/frist-devDiary" rel="alternate" type="text/html" title="MultipartFile를 이용한 파일업로드" />
       <published>2023-05-19T03:00:00+09:00</published>
       <updated>2023-05-19T03:00:00+09:00</updated>
-      <id>http://localhost:4000/frist-devDiary</id>
-      <content type="html" xml:base="http://localhost:4000/frist-devDiary">&lt;h2 id=&quot;1개요&quot;&gt;1.개요&lt;/h2&gt;
+      <id>http://localhost:4000/jekyll_blog/frist-devDiary</id>
+      <content type="html" xml:base="http://localhost:4000/jekyll_blog/frist-devDiary">&lt;h2 id=&quot;1개요&quot;&gt;1.개요&lt;/h2&gt;
 
 &lt;ul&gt;
     &lt;li&gt;
@@ -415,11 +415,11 @@ $(&quot;#cityBtn&quot;).on(&quot;click&quot;, function(){
   
     <entry>
       <title type="html">CampingTogether</title>
-      <link href="http://localhost:4000/portfolio-campingTogether" rel="alternate" type="text/html" title="CampingTogether" />
+      <link href="http://localhost:4000/jekyll_blog/portfolio-campingTogether" rel="alternate" type="text/html" title="CampingTogether" />
       <published>2023-05-12T03:00:00+09:00</published>
       <updated>2023-05-12T03:00:00+09:00</updated>
-      <id>http://localhost:4000/portfolio-campingTogether</id>
-      <content type="html" xml:base="http://localhost:4000/portfolio-campingTogether">&lt;div class=&quot;portfolio-description&quot;&gt;
+      <id>http://localhost:4000/jekyll_blog/portfolio-campingTogether</id>
+      <content type="html" xml:base="http://localhost:4000/jekyll_blog/portfolio-campingTogether">&lt;div class=&quot;portfolio-description&quot;&gt;
     &lt;h4&gt;제목&lt;/h4&gt;  
     &lt;span&gt;Camping Together&lt;/span&gt;
 &lt;/div&gt;
@@ -602,11 +602,11 @@ $(&quot;#cityBtn&quot;).on(&quot;click&quot;, function(){
   
     <entry>
       <title type="html">Sprip</title>
-      <link href="http://localhost:4000/portfolio-sprip" rel="alternate" type="text/html" title="Sprip" />
+      <link href="http://localhost:4000/jekyll_blog/portfolio-sprip" rel="alternate" type="text/html" title="Sprip" />
       <published>2023-05-12T03:00:00+09:00</published>
       <updated>2023-05-12T03:00:00+09:00</updated>
-      <id>http://localhost:4000/portfolio-sprip</id>
-      <content type="html" xml:base="http://localhost:4000/portfolio-sprip">&lt;div class=&quot;portfolio-description&quot;&gt;
+      <id>http://localhost:4000/jekyll_blog/portfolio-sprip</id>
+      <content type="html" xml:base="http://localhost:4000/jekyll_blog/portfolio-sprip">&lt;div class=&quot;portfolio-description&quot;&gt;
     &lt;h4&gt;제목&lt;/h4&gt;  
     &lt;span&gt;Sprip&lt;/span&gt;
 &lt;/div&gt;
