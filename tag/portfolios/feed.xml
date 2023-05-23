@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/portfolios/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2023-05-22T19:30:26+09:00</updated>
+  <updated>2023-05-23T15:39:32+09:00</updated>
   <id>http://localhost:4000/tag/portfolios/feed.xml</id>
 
   
@@ -51,7 +51,7 @@
 &lt;/div&gt;
 &lt;div class=&quot;portfolio-description&quot;&gt;
     &lt;h4&gt;개발목표&lt;/h4&gt; 
-    &lt;span&gt;전국의 다양한 캠핑장을 소개하고, 실시간으로 예약할 수 있는 사이트&lt;/span&gt;
+    &lt;span&gt;자신에게 맞는 여가활동을 알아볼 수 있는 여가 플랫폼을 만들기&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&quot;portfolio-description&quot;&gt;
     &lt;h4&gt;GitHub&lt;/h4&gt; 
@@ -164,7 +164,7 @@
       
 
       
-        <summary type="html">제목 Sprip 기간 2023년 02월 24일 ~ 2023년 03월 10일 인원 5명 기여율 25% 개발목표 전국의 다양한 캠핑장을 소개하고, 실시간으로 예약할 수 있는 사이트 GitHub https://github.com/Anew01/teamTest</summary>
+        <summary type="html">제목 Sprip 기간 2023년 02월 24일 ~ 2023년 03월 10일 인원 5명 기여율 25% 개발목표 자신에게 맞는 여가활동을 알아볼 수 있는 여가 플랫폼을 만들기 GitHub https://github.com/Anew01/teamTest</summary>
       
 
       
