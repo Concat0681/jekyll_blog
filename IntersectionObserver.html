@@ -198,16 +198,16 @@ into the {body} of the default.hbs template -->
 <ul>
     <li>IntersectionObserver를 생성하고 observer에 대입합니다.</li>
     <li>
-      div를 선택자로 가져와 each문을 통해 길이만큼 각 div를 oberser.observe() 안에 매개변수로 지정해 줍니다.
+      .test를 선택자로 가져와 forEach문을 통해 요쇼들의 길이만큼 각 test를 oberser.observe() 안에 매개변수로 지정해 줍니다.
     </li>
 </ul>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">observer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">IntersectionObserver</span><span class="p">(</span><span class="nx">e</span> <span class="o">=&gt;</span> <span class="p">{})</span>
 
-<span class="kd">let</span> <span class="nx">divs</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">.test</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">let</span> <span class="nx">tests</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">.test</span><span class="dl">'</span><span class="p">)</span>
 
-<span class="nx">divs</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">d</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
-  <span class="nx">observer</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nx">divs</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+<span class="nx">tests</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">t</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">observer</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nx">tests</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
 <span class="p">})</span>
 </code></pre></div></div>
 
