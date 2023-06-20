@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/jekyll_blog/tag/javascript/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/jekyll_blog/" rel="alternate" type="text/html" />
-  <updated>2023-06-20T14:25:09+09:00</updated>
+  <updated>2023-06-20T15:29:15+09:00</updated>
   <id>http://localhost:4000/jekyll_blog/tag/javascript/feed.xml</id>
 
   
@@ -236,6 +236,139 @@ then 메서드의 두 번째 인수로 실패 콜백 함수를 지정하면 catc
 
       
         <summary type="html">1. 개요</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">IntersectionObserver를 이용한 Javascript</title>
+      <link href="http://localhost:4000/jekyll_blog/IntersectionObserver" rel="alternate" type="text/html" title="IntersectionObserver를 이용한 Javascript" />
+      <published>2023-05-24T03:00:00+09:00</published>
+      <updated>2023-05-24T03:00:00+09:00</updated>
+      <id>http://localhost:4000/jekyll_blog/IntersectionObserver</id>
+      <content type="html" xml:base="http://localhost:4000/jekyll_blog/IntersectionObserver">&lt;style&gt;
+  ul{
+    margin-top : 25px;
+  }
+  .test{
+    opacity: 0;
+    transition: all 2s;
+  }
+  .test&gt;img{
+    width: 100%;
+  }
+&lt;/style&gt;
+
+&lt;h2 id=&quot;1개요&quot;&gt;1.개요&lt;/h2&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;
+        IntersectionObserver를 이용해 사용자가 스크롤시 화면에 요소가 감지되면
+        실행되는 기능
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-1-intersectionobserver-생성과-기능-추가&quot;&gt;2-1. IntersectionObserver 생성과 기능 추가&lt;/h2&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;IntersectionObserver를 생성하고 observer에 대입합니다.&lt;/li&gt;
+    &lt;li&gt;
+      .test를 선택자로 가져와 forEach문을 통해 요쇼들의 길이만큼 각 test를 oberser.observe() 안에 매개변수로 지정해 줍니다.
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;observer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;IntersectionObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{})&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tests&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;querySelectorAll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;.test&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;tests&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;observer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;observe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tests&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;2-2-intersectionobserver에-기능-추가&quot;&gt;2-2. IntersectionObserver에 기능 추가&lt;/h2&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;test란 클래스의 css에 opacity를 0, transition: all 2s 을 만들어 줍니다.&lt;/li&gt;
+    &lt;li&gt;
+      IntersectionObserver에 매개변수를 e로 설정해 forEach를 통해 div안에 있는 요소들의
+      스타일을 text.isIntersecting -&amp;gt; 요소가 화면에 보일때 로 기준을 나누어 바꿔줍니다,
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/** css 
+  .test{
+    opacity: 0;
+    transition: all 1s;
+  }
+**/&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;observer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;IntersectionObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isIntersecting&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;opacity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;transform&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;translateX(0%)&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;opacity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;transform&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;translateX(30%)&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;3-결과&quot;&gt;3. 결과&lt;/h2&gt;
+
+&lt;div class=&quot;test&quot;&gt;안녕하세요&lt;/div&gt;
+&lt;div class=&quot;test&quot;&gt;IntersectionObserver 테스트입니다.&lt;/div&gt;
+&lt;div class=&quot;test&quot;&gt;
+  &lt;img src=&quot;assets/images/bear.jpg&quot; /&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  let observer = new IntersectionObserver(e =&gt; {
+  e.forEach(text =&gt; {
+    if (text.isIntersecting) {
+      text.target.style.opacity = 1
+      text.target.style.transform = &apos;translateX(0%)&apos;
+    } else {
+      text.target.style.opacity = 0
+      text.target.style.transform = &apos;translateX(30%)&apos;
+    }
+  })
+})
+let divs = document.querySelectorAll(&apos;.test&apos;)
+
+divs.forEach((d, i) =&gt; {
+  observer.observe(divs[i])
+})
+&lt;/script&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>이상화</name>
+        
+          <email>hls112347@gmail.com</email>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="diary" />
+      
+        <category term="javaScript" />
+      
+
+      
+        <summary type="html"></summary>
       
 
       
