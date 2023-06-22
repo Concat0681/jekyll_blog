@@ -1,4 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/jekyll_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/jekyll_blog/" rel="alternate" type="text/html" /><updated>2023-06-20T15:29:15+09:00</updated><id>http://localhost:4000/jekyll_blog/feed.xml</id><title type="html">Concat0681</title><subtitle>Concat0681의 기술블로그 입니다.</subtitle><entry><title type="html">JavaScript-Ajax</title><link href="http://localhost:4000/jekyll_blog/javascript-ajax" rel="alternate" type="text/html" title="JavaScript-Ajax" /><published>2023-06-20T03:00:00+09:00</published><updated>2023-06-20T03:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/javascript-ajax</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/javascript-ajax">&lt;h2 id=&quot;1-개요&quot;&gt;1. 개요&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/jekyll_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/jekyll_blog/" rel="alternate" type="text/html" /><updated>2023-06-22T15:31:56+09:00</updated><id>http://localhost:4000/jekyll_blog/feed.xml</id><title type="html">Concat0681</title><subtitle>Concat0681의 기술블로그 입니다.</subtitle><entry><title type="html">JavaScript-Hoisting(호이스팅)</title><link href="http://localhost:4000/jekyll_blog/javascript-hoisting" rel="alternate" type="text/html" title="JavaScript-Hoisting(호이스팅)" /><published>2023-06-22T03:00:00+09:00</published><updated>2023-06-22T03:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/javascript-hoisting</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/javascript-hoisting">&lt;h2 id=&quot;1-개요&quot;&gt;1. 개요&lt;/h2&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;h4&gt;Hoisting(호이스팅)란&lt;/h4&gt;
+        인터프리터가 변수와 함수의 메모리 공간을 선언 전에 미리 할당하는 것을 의미합니다.&lt;br /&gt;
+        &lt;b&gt;var&lt;/b&gt;로 선언된 변수의 경우 호이스팅 시 &lt;b&gt;undifined&lt;/b&gt;로 변수를 초기화합니다.&lt;br /&gt;
+        반면 &lt;b&gt;let&lt;/b&gt; 과 &lt;b&gt;const&lt;/b&gt;로 선언한 변수의 경우 호이스팅 시 변수를 초기화하지 않습니다.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;h4&gt;Hoisting을 설명할때&lt;/h4&gt;
+      변수의 선언과 초기화를 분리한 후, 선언을 코드의 최상단으로 옮기는것
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-hoisting예제&quot;&gt;2. Hoisting예제&lt;/h2&gt;
+
+&lt;p&gt;
+JavaScript는 함수 코드를 실행가기전에 함수 선언에 대한 매모리부터 할당합니다. 덕분에 함수를 호출하는 코드를 함수 선언보다 앞서 배치할 수 있습니다.
+&lt;/p&gt;
+
+&lt;h4&gt;일반적으로 코드를 작성하는 순서&lt;/h4&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;안녕하세요 제 이름은 &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;입니다.&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;이상화&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4&gt;함수 선언보다 호출을 앞서 작성하는 코드&lt;/h4&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;이상화&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;안녕하세요 제 이름은 &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;입니다.&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;
+  함수 호출이 함수 자체보다 앞서 존재하지만 동작합니다. 이것이 JavaScript에서 실행 맥락이 동작하는 방식입니다
+&lt;/p&gt;
+
+&lt;h2 id=&quot;3-선언만-호이스팅-대상&quot;&gt;3. 선언만 호이스팅 대상&lt;/h2&gt;
+
+&lt;p&gt;
+  JavaScript는 초기화를 제외한 선언만 호이스팅합니다. 변수를 먼저 사용하고 그 후에 선언 및 초기화가 나타나면, 사용하는 시점의 변수는 기본 초기화 상태(var 선언시 undefined, 그외에는 초기화하지 않음)입니다.
+&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 호이스팅한 var 선언으로 인해 undefined 출력&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 선언&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 초기화&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;
+  선언 없이 초기화만 존재할때, 호이스팅은 없고 변수를 읽어오면 ReferenceErrror 예외가 발생합니다
+&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// ReferenceError&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 초기화&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;
+  호이스팅의 더많은 예제
+&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// x초기화 x를 선언하지 않은경우 선언 그러나 명령문에 var가 없으므로 호이스팅이 발생하지 않음&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// &apos;1 undefined&apos;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// JavaScript는 선언만 호이스팅하므로 윗줄의 y는 undefined&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// y를 선언하고 초기화&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4&gt;let과 const 호이스팅&lt;/h4&gt;
+&lt;p&gt;let과 const로 선언한 변수도 호이스팅 대상이지만 var와 달리 호이스팅 시 undefuned로 변수를 초기화하지는 않습니다. 따라서 변수의 초기화 전에 읽는 코드가 먼저 작성되면 예외가 발생합니다.&lt;/p&gt;</content><author><name>이상화</name><email>hls112347@gmail.com</email></author><category term="diary" /><category term="javaScript" /><summary type="html">1. 개요</summary></entry><entry><title type="html">JavaScript-Ajax</title><link href="http://localhost:4000/jekyll_blog/javascript-ajax-copy" rel="alternate" type="text/html" title="JavaScript-Ajax" /><published>2023-06-20T03:00:00+09:00</published><updated>2023-06-20T03:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/javascript-ajax%20copy</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/javascript-ajax-copy">&lt;h2 id=&quot;1-개요&quot;&gt;1. 개요&lt;/h2&gt;
 
 &lt;ul&gt;
     &lt;li&gt;
