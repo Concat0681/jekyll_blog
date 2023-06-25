@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/jekyll_blog/tag/diary/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/jekyll_blog/" rel="alternate" type="text/html" />
-  <updated>2023-06-22T15:31:56+09:00</updated>
+  <updated>2023-06-25T15:31:45+09:00</updated>
   <id>http://localhost:4000/jekyll_blog/tag/diary/feed.xml</id>
 
   
@@ -30,6 +30,213 @@
   
   
 
+  
+    <entry>
+      <title type="html">Java 면접 질문 정리(1)</title>
+      <link href="http://localhost:4000/jekyll_blog/java-Interview-prep" rel="alternate" type="text/html" title="Java 면접 질문 정리(1)" />
+      <published>2023-06-24T03:00:00+09:00</published>
+      <updated>2023-06-24T03:00:00+09:00</updated>
+      <id>http://localhost:4000/jekyll_blog/java-Interview-prep</id>
+      <content type="html" xml:base="http://localhost:4000/jekyll_blog/java-Interview-prep">&lt;style&gt;
+  table th, table td{
+    width : 150px;
+    text-align : center;
+  }
+&lt;/style&gt;
+
+&lt;h2 id=&quot;자바-면접-질문-정리&quot;&gt;자바 면접 질문 정리&lt;/h2&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#java란&quot;&gt;Java정의&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#OOP_charcteristic&quot;&gt;객체지향적 언어 특징&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#method_overriding&quot;&gt;매서드 오버라이딩, 오버로딩&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#access_controller&quot;&gt;접근제어자&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#final&quot;&gt;Final 키워드란&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#abstract&quot;&gt;인터페이스와 추상 클래스&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#static&quot;&gt;Static 이란&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;java란&quot;&gt;1.Java란&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;
+자바는 객체지향적 프로그래밍(OOP) 입니다.&lt;br /&gt;
+객체지향적 언어(OOP)란, 프로그래밍에 사용될 데이터의 상태와 행위를 객체로 만들어, 객채간의 상호작용을 통해 비니지스 로직을 구성하는 프로그래밍 입니다.
+&lt;/p&gt;
+
+&lt;h2 id=&quot;OOP_charcteristic&quot;&gt;2.객체지향적 언어 특징&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4&gt;1.추상화&lt;/h4&gt;&lt;br /&gt;
+    객체의 공통적인 속성과 기능을 추출하여 정의하는것&lt;br /&gt;
+    자바에서 추상화를 구현할 수 있는 문법 요소로는 &lt;a href=&quot;#abstract&quot;&gt;추상 클래스(abstract)&lt;/a&gt; 와 &lt;a href=&quot;#abstract&quot;&gt;인터페이가(interface)&lt;/a&gt; 있다
+  &lt;/li&gt;&lt;br /&gt;
+  &lt;li&gt;
+    &lt;h4&gt;2.상속&lt;/h4&gt;&lt;br /&gt;
+    상속이란 기존 클래스를 재활용하여 새로운 클래스를 작성하는 자바의 문법 요소&lt;br /&gt;
+    클래스간 공유될수 있는 속성과 기능들을 상위 클래스로 추상화 시켜 해당 &lt;b&gt;상위 클래스로부터 확장된 여러 개의 하위 클래스들이 모든 상위 클래스의 속성과 기능들 사용&lt;/b&gt;할 수 있도록 하는것&lt;br /&gt;
+    반복적인 코드를 최소화하고 공유하는 속성과 기능에 간편하게 접근하여 사용할 수 있도록 함
+  &lt;/li&gt;&lt;br /&gt;
+  &lt;li&gt;
+    &lt;h4&gt;3.다향성&lt;/h4&gt;&lt;br /&gt;
+    &lt;b&gt;객체의 속성이나 기능이 상황에 따라 여러가지 형테를 가질 수 있는것&lt;/b&gt;&lt;br /&gt;
+    객체의 속성이나 기능이 그맥락에 따라 다른 역활을 수행할 수 있는 객체 지향의 특징&lt;br /&gt;
+    그 예로는 &lt;a href=&quot;#method_overriding&quot;&gt;메서드 오버라이딩(method overriding)&lt;/a&gt; 과 &lt;a href=&quot;#method_overriding&quot;&gt;매서드 오버로딩(method overloading)&lt;/a&gt;이 있다.
+  &lt;/li&gt;&lt;br /&gt;
+  &lt;li&gt;
+    &lt;h4&gt;4.캡슐화&lt;/h4&gt;&lt;br /&gt;
+    &lt;b&gt;서로 연관있는 속성과 기능들을 하나의 캡슐로 만들어 데이터를 외부로 부터 보호 하는것&lt;/b&gt;&lt;br /&gt;
+    &lt;b&gt;데이터 보호&lt;/b&gt; - 외부로 부터 클래스에 정의된 속성과 기능들을 보호&lt;br /&gt;
+    &lt;b&gt;데이터 은닉&lt;/b&gt; - 내부의 동작을 감추고 외부에는 필요한 부분만 노출&lt;br /&gt;&lt;br /&gt;
+    캡슐화를 구현하기 위한 방법은 크게 2가지
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#access_controller&quot;&gt;1.접근제어자&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;2.getter/setter 메서드&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;method_overriding&quot;&gt;3.매서드 오버라이딩, 오버로딩&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4&gt;매세드 오버라이딩(method overriding)&lt;/h4&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;부모클래스의 매서드를 하위클래스에서 재정의 하는것&lt;/b&gt;&lt;/li&gt;
+  &lt;li&gt;필요한 부분만 재 수정하여 원하는 기능으로 구현하는 것&lt;/li&gt;
+  &lt;li&gt;오버라이딩의 장점으로는 코드 중복을 줄이고, 기능 확장에 이점이 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;매세드 오버로딩(method overloading)&lt;/h4&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;같은 이름을 가지는 매소드를 여러번 정의하는것&lt;/b&gt;&lt;/li&gt;
+  &lt;li&gt;매개변수의 개수나 타입을 다르게해 다른기능 으로 재정의 할 수 있음&lt;/li&gt;
+  &lt;li&gt;가동성이 좋아짐&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;access_controller&quot;&gt;4. 접근제어자&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;접근제어자는 클래스, 인터페이스, 맴버변수, 함수 등의 접근을 제어 합니다&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;외부 객체의 무분별한 접근으로 부터 내부 데이터를 보호할 수 있습니다&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;접근제어자&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;같은 클래스 맴버&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;같은 패키지 맴버&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;자식 클래스&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;그 외&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Public&lt;/td&gt;
+      &lt;td&gt;O&lt;/td&gt;
+      &lt;td&gt;O&lt;/td&gt;
+      &lt;td&gt;O&lt;/td&gt;
+      &lt;td&gt;O&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Protected&lt;/td&gt;
+      &lt;td&gt;O&lt;/td&gt;
+      &lt;td&gt;O&lt;/td&gt;
+      &lt;td&gt;O&lt;/td&gt;
+      &lt;td&gt;X&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Default&lt;/td&gt;
+      &lt;td&gt;O&lt;/td&gt;
+      &lt;td&gt;O&lt;/td&gt;
+      &lt;td&gt;X&lt;/td&gt;
+      &lt;td&gt;X&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Private&lt;/td&gt;
+      &lt;td&gt;O&lt;/td&gt;
+      &lt;td&gt;X&lt;/td&gt;
+      &lt;td&gt;X&lt;/td&gt;
+      &lt;td&gt;X&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;final&quot;&gt;5.final 키워드란&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;변수나 메소드 또는 클래스가 &lt;b&gt;변경불가능&lt;/b&gt; 하도록 만드는 자바 키워드&lt;/p&gt;
+&lt;h4&gt;final을 사용하는 이유&lt;/h4&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;클래스, 매서드, 변수가 변하지 않도록 하기 위해 사용&lt;/p&gt;
+&lt;p&gt;final을 선언하면 절대 변하지 않는 값 &lt;b&gt;상수&lt;/b&gt;가 됩니다&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;abstract&quot;&gt;6.인테페이스와 추상 클래스&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4&gt;추상 클래스(abstract)&lt;/h4&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;추상 메서드 하나 이상을 포함한 클래스&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;클래스이기 때문에 하나만 상속이 가능 합니다&lt;/li&gt;
+  &lt;li&gt;추상 메서드란, 선언부만 있고 구현부가 없는 메세드이며, 하위 클래스에게 메서드 구현을 강제함&lt;/li&gt;
+  &lt;li&gt;추상 클래스 -&amp;gt; extends 키워드 사용, 하나만 가능&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;인터페이스(interface)&lt;/h4&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;구현체 없이 메서드에 대한 명세만 가지고 있고 모든 메서드 추상 메서드 입니다&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;인터페이스를 상속받는 자식클래스에 모든 매서드에 대한 구현을 강제하며, 다중 상속이 가능합니다&lt;/li&gt;
+  &lt;li&gt;인터페이스 -&amp;gt; implements 키워드 사용, 여러개 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;static&quot;&gt;7.Static이란&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;static 변수와 static 메서드, 정적 맴버(=클래스 맴버)를 만들 수 있는 키워드 입니다&lt;/p&gt;
+
+&lt;p&gt;메모리에 한번 할당되어 프로그램이 종료될 때 해제되는것 입니다&lt;/p&gt;
+
+&lt;p&gt;일반적으로 만든 Class는 Static 영역에 생성되고, new 연산을 통해 생성된 객체는 Heap영역에 생성됩니다&lt;/p&gt;
+
+&lt;p&gt;가비지 컬랙터를 통해 Heap영역의 메모리는 관리 되지만 Static 영역에 할당된 메모리는 모든 객체가 공유 되는 장점을 가지지만 가비지 컬랙터를 통해 관리되지 않아 프로그램이 종료될깨 까지 존재 합니다&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>이상화</name>
+        
+          <email>hls112347@gmail.com</email>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="diary" />
+      
+        <category term="java" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">JavaScript-Hoisting(호이스팅)</title>

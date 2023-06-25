@@ -11,7 +11,7 @@
 
 
 
-    <title>JavaScript-Hoisting(호이스팅)</title>
+    <title>Java 면접 질문 정리(1)</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -35,21 +35,21 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="Concat0681의 기술블로그 입니다." />
     <link rel="shortcut icon" href="http://localhost:4000/jekyll_blog/" type="image/png" />
-    <link rel="canonical" href="http://localhost:4000/jekyll_blog/javascript-hoisting" />
+    <link rel="canonical" href="http://localhost:4000/jekyll_blog/java-Interview-prep" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Concat0681" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="JavaScript-Hoisting(호이스팅)" />
+    <meta property="og:title" content="Java 면접 질문 정리(1)" />
     <meta property="og:description" content="Concat0681의 기술블로그 입니다." />
-    <meta property="og:url" content="http://localhost:4000/jekyll_blog/javascript-hoisting" />
+    <meta property="og:url" content="http://localhost:4000/jekyll_blog/java-Interview-prep" />
     <meta property="og:image" content="http://localhost:4000/jekyll_blog/assets/built/images/devDiary/dev.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:tag" content="Diary" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="JavaScript-Hoisting(호이스팅)" />
+    <meta name="twitter:title" content="Java 면접 질문 정리(1)" />
     <meta name="twitter:description" content="Concat0681의 기술블로그 입니다." />
     <meta name="twitter:url" content="http://localhost:4000/jekyll_blog/" />
     <meta name="twitter:image" content="http://localhost:4000/jekyll_blog/assets/built/images/devDiary/dev.jpg" />
@@ -71,7 +71,7 @@
         "name": "Concat0681",
         "logo": "http://localhost:4000/jekyll_blog/"
     },
-    "url": "http://localhost:4000/jekyll_blog/javascript-hoisting",
+    "url": "http://localhost:4000/jekyll_blog/java-Interview-prep",
     "image": {
         "@type": "ImageObject",
         "url": "http://localhost:4000/jekyll_blog/assets/built/images/devDiary/dev.jpg",
@@ -80,7 +80,7 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/jekyll_blog/javascript-hoisting"
+        "@id": "http://localhost:4000/jekyll_blog/java-Interview-prep"
     },
     "description": "Concat0681의 기술블로그 입니다."
 }
@@ -95,7 +95,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="JavaScript-Hoisting(호이스팅)" href="/jekyll_blog/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Java 면접 질문 정리(1)" href="/jekyll_blog/feed.xml" />
 
 </head>
 <body class="diary-template">
@@ -143,11 +143,11 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full  tag-diary tag-javascript post tag-diary ">
+        <article class="post-full  tag-diary tag-java post tag-diary ">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="22 June 2023">22 June 2023</time>
+                    <time class="post-full-meta-date" datetime="24 June 2023">24 June 2023</time>
                     
                         <span class="date-divider">/</span>
                         
@@ -156,12 +156,12 @@ into the {body} of the default.hbs template -->
                             
                         
                             
-                               <a href='/jekyll_blog/tag/javascript/'>JAVASCRIPT</a>
+                               <a href='/jekyll_blog/tag/java/'>JAVA</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title" style="margin-top: 50px;">JavaScript-Hoisting(호이스팅)</h1>
+                <h1 class="post-full-title" style="margin-top: 50px;">Java 면접 질문 정리(1)</h1>
             </header>
 
         
@@ -173,80 +173,176 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <h2 id="1-개요">1. 개요</h2>
+                    <style>
+  table th, table td{
+    width : 150px;
+    text-align : center;
+  }
+</style>
 
+<h2 id="자바-면접-질문-정리">자바 면접 질문 정리</h2>
+
+<p><br /></p>
 <ul>
-    <li>
-        <h4>Hoisting(호이스팅)란</h4>
-        인터프리터가 변수와 함수의 메모리 공간을 선언 전에 미리 할당하는 것을 의미합니다.<br />
-        <b>var</b>로 선언된 변수의 경우 호이스팅 시 <b>undifined</b>로 변수를 초기화합니다.<br />
-        반면 <b>let</b> 과 <b>const</b>로 선언한 변수의 경우 호이스팅 시 변수를 초기화하지 않습니다.
-    </li>
-    <li>
-      <h4>Hoisting을 설명할때</h4>
-      변수의 선언과 초기화를 분리한 후, 선언을 코드의 최상단으로 옮기는것
-    </li>
+  <li><a href="#java란">Java정의</a></li>
+  <li><a href="#OOP_charcteristic">객체지향적 언어 특징</a></li>
+  <li><a href="#method_overriding">매서드 오버라이딩, 오버로딩</a></li>
+  <li><a href="#access_controller">접근제어자</a></li>
+  <li><a href="#final">Final 키워드란</a></li>
+  <li><a href="#abstract">인터페이스와 추상 클래스</a></li>
+  <li><a href="#static">Static 이란</a></li>
 </ul>
 
-<h2 id="2-hoisting예제">2. Hoisting예제</h2>
-
+<h2 id="java란">1.Java란</h2>
+<p><br /></p>
 <p>
-JavaScript는 함수 코드를 실행가기전에 함수 선언에 대한 매모리부터 할당합니다. 덕분에 함수를 호출하는 코드를 함수 선언보다 앞서 배치할 수 있습니다.
+자바는 객체지향적 프로그래밍(OOP) 입니다.<br />
+객체지향적 언어(OOP)란, 프로그래밍에 사용될 데이터의 상태와 행위를 객체로 만들어, 객채간의 상호작용을 통해 비니지스 로직을 구성하는 프로그래밍 입니다.
 </p>
 
-<h4>일반적으로 코드를 작성하는 순서</h4>
+<h2 id="OOP_charcteristic">2.객체지향적 언어 특징</h2>
+<p><br /></p>
+<ul>
+  <li>
+    <h4>1.추상화</h4><br />
+    객체의 공통적인 속성과 기능을 추출하여 정의하는것<br />
+    자바에서 추상화를 구현할 수 있는 문법 요소로는 <a href="#abstract">추상 클래스(abstract)</a> 와 <a href="#abstract">인터페이가(interface)</a> 있다
+  </li><br />
+  <li>
+    <h4>2.상속</h4><br />
+    상속이란 기존 클래스를 재활용하여 새로운 클래스를 작성하는 자바의 문법 요소<br />
+    클래스간 공유될수 있는 속성과 기능들을 상위 클래스로 추상화 시켜 해당 <b>상위 클래스로부터 확장된 여러 개의 하위 클래스들이 모든 상위 클래스의 속성과 기능들 사용</b>할 수 있도록 하는것<br />
+    반복적인 코드를 최소화하고 공유하는 속성과 기능에 간편하게 접근하여 사용할 수 있도록 함
+  </li><br />
+  <li>
+    <h4>3.다향성</h4><br />
+    <b>객체의 속성이나 기능이 상황에 따라 여러가지 형테를 가질 수 있는것</b><br />
+    객체의 속성이나 기능이 그맥락에 따라 다른 역활을 수행할 수 있는 객체 지향의 특징<br />
+    그 예로는 <a href="#method_overriding">메서드 오버라이딩(method overriding)</a> 과 <a href="#method_overriding">매서드 오버로딩(method overloading)</a>이 있다.
+  </li><br />
+  <li>
+    <h4>4.캡슐화</h4><br />
+    <b>서로 연관있는 속성과 기능들을 하나의 캡슐로 만들어 데이터를 외부로 부터 보호 하는것</b><br />
+    <b>데이터 보호</b> - 외부로 부터 클래스에 정의된 속성과 기능들을 보호<br />
+    <b>데이터 은닉</b> - 내부의 동작을 감추고 외부에는 필요한 부분만 노출<br /><br />
+    캡슐화를 구현하기 위한 방법은 크게 2가지
+    <ul>
+      <li><a href="#access_controller">1.접근제어자</a></li>
+      <li>2.getter/setter 메서드</li>
+    </ul>
+  </li>
+</ul>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">hello</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">안녕하세요 제 이름은 </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">name</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">입니다.</span><span class="dl">'</span><span class="p">)</span>
-<span class="p">}</span>
+<h2 id="method_overriding">3.매서드 오버라이딩, 오버로딩</h2>
+<p><br /></p>
+<h4>매세드 오버라이딩(method overriding)</h4>
+<p><br /></p>
+<ul>
+  <li><b>부모클래스의 매서드를 하위클래스에서 재정의 하는것</b></li>
+  <li>필요한 부분만 재 수정하여 원하는 기능으로 구현하는 것</li>
+  <li>오버라이딩의 장점으로는 코드 중복을 줄이고, 기능 확장에 이점이 있음</li>
+</ul>
+<h4>매세드 오버로딩(method overloading)</h4>
+<p><br /></p>
+<ul>
+  <li><b>같은 이름을 가지는 매소드를 여러번 정의하는것</b></li>
+  <li>매개변수의 개수나 타입을 다르게해 다른기능 으로 재정의 할 수 있음</li>
+  <li>가동성이 좋아짐</li>
+</ul>
 
-<span class="nx">hello</span><span class="p">(</span><span class="dl">'</span><span class="s1">이상화</span><span class="dl">'</span><span class="p">)</span>
-</code></pre></div></div>
+<h2 id="access_controller">4. 접근제어자</h2>
+<p><br /></p>
 
-<h4>함수 선언보다 호출을 앞서 작성하는 코드</h4>
+<p><b>접근제어자는 클래스, 인터페이스, 맴버변수, 함수 등의 접근을 제어 합니다</b></p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">hello</span><span class="p">(</span><span class="dl">'</span><span class="s1">이상화</span><span class="dl">'</span><span class="p">)</span>
+<p>외부 객체의 무분별한 접근으로 부터 내부 데이터를 보호할 수 있습니다</p>
 
-<span class="kd">function</span> <span class="nx">hello</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">안녕하세요 제 이름은 </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">name</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">입니다.</span><span class="dl">'</span><span class="p">)</span>
-<span class="p">}</span>
-</code></pre></div></div>
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">접근제어자</th>
+      <th style="text-align: center">같은 클래스 맴버</th>
+      <th style="text-align: center">같은 패키지 맴버</th>
+      <th style="text-align: center">자식 클래스</th>
+      <th style="text-align: center">그 외</th>
+    </tr>
+    <tr>
+      <td>Public</td>
+      <td>O</td>
+      <td>O</td>
+      <td>O</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>Protected</td>
+      <td>O</td>
+      <td>O</td>
+      <td>O</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Default</td>
+      <td>O</td>
+      <td>O</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Private</td>
+      <td>O</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+  </tbody>
+</table>
+<p><br /></p>
 
-<p>
-  함수 호출이 함수 자체보다 앞서 존재하지만 동작합니다. 이것이 JavaScript에서 실행 맥락이 동작하는 방식입니다
-</p>
+<h2 id="final">5.final 키워드란</h2>
+<p><br /></p>
 
-<h2 id="3-선언만-호이스팅-대상">3. 선언만 호이스팅 대상</h2>
+<p>변수나 메소드 또는 클래스가 <b>변경불가능</b> 하도록 만드는 자바 키워드</p>
+<h4>final을 사용하는 이유</h4>
+<p><br /></p>
+<p>클래스, 매서드, 변수가 변하지 않도록 하기 위해 사용</p>
+<p>final을 선언하면 절대 변하지 않는 값 <b>상수</b>가 됩니다</p>
+<p><br /></p>
 
-<p>
-  JavaScript는 초기화를 제외한 선언만 호이스팅합니다. 변수를 먼저 사용하고 그 후에 선언 및 초기화가 나타나면, 사용하는 시점의 변수는 기본 초기화 상태(var 선언시 undefined, 그외에는 초기화하지 않음)입니다.
-</p>
+<h2 id="abstract">6.인테페이스와 추상 클래스</h2>
+<p><br /></p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="c1">// 호이스팅한 var 선언으로 인해 undefined 출력</span>
-<span class="kd">var</span> <span class="nx">num</span> <span class="c1">// 선언</span>
-<span class="nx">num</span> <span class="o">=</span> <span class="mi">6</span> <span class="c1">// 초기화</span>
-</code></pre></div></div>
+<h4>추상 클래스(abstract)</h4>
+<p><br /></p>
 
-<p>
-  선언 없이 초기화만 존재할때, 호이스팅은 없고 변수를 읽어오면 ReferenceErrror 예외가 발생합니다
-</p>
+<p>추상 메서드 하나 이상을 포함한 클래스</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="c1">// ReferenceError</span>
-<span class="nx">num</span> <span class="o">=</span> <span class="mi">6</span> <span class="c1">// 초기화</span>
-</code></pre></div></div>
+<ul>
+  <li>클래스이기 때문에 하나만 상속이 가능 합니다</li>
+  <li>추상 메서드란, 선언부만 있고 구현부가 없는 메세드이며, 하위 클래스에게 메서드 구현을 강제함</li>
+  <li>추상 클래스 -&gt; extends 키워드 사용, 하나만 가능</li>
+</ul>
 
-<p>
-  호이스팅의 더많은 예제
-</p>
+<h4>인터페이스(interface)</h4>
+<p><br /></p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">x</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">// x초기화 x를 선언하지 않은경우 선언 그러나 명령문에 var가 없으므로 호이스팅이 발생하지 않음</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span> <span class="o">+</span> <span class="dl">''</span> <span class="o">+</span> <span class="nx">y</span><span class="p">)</span> <span class="c1">// '1 undefined'</span>
-<span class="c1">// JavaScript는 선언만 호이스팅하므로 윗줄의 y는 undefined</span>
-<span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1">// y를 선언하고 초기화</span>
-</code></pre></div></div>
+<p>구현체 없이 메서드에 대한 명세만 가지고 있고 모든 메서드 추상 메서드 입니다</p>
 
-<h4>let과 const 호이스팅</h4>
-<p>let과 const로 선언한 변수도 호이스팅 대상이지만 var와 달리 호이스팅 시 undefuned로 변수를 초기화하지는 않습니다. 따라서 변수의 초기화 전에 읽는 코드가 먼저 작성되면 예외가 발생합니다.</p>
+<ul>
+  <li>인터페이스를 상속받는 자식클래스에 모든 매서드에 대한 구현을 강제하며, 다중 상속이 가능합니다</li>
+  <li>인터페이스 -&gt; implements 키워드 사용, 여러개 가능</li>
+</ul>
+<p><br /></p>
+
+<h2 id="static">7.Static이란</h2>
+<p><br /></p>
+
+<p>static 변수와 static 메서드, 정적 맴버(=클래스 맴버)를 만들 수 있는 키워드 입니다</p>
+
+<p>메모리에 한번 할당되어 프로그램이 종료될 때 해제되는것 입니다</p>
+
+<p>일반적으로 만든 Class는 Static 영역에 생성되고, new 연산을 통해 생성된 객체는 Heap영역에 생성됩니다</p>
+
+<p>가비지 컬랙터를 통해 Heap영역의 메모리는 관리 되지만 Static 영역에 할당된 메모리는 모든 객체가 공유 되는 장점을 가지지만 가비지 컬랙터를 통해 관리되지 않아 프로그램이 종료될깨 까지 존재 합니다</p>
 
                 </div>
             </section>
@@ -304,9 +400,9 @@ JavaScript는 함수 코드를 실행가기전에 함수 선언에 대한 매모
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            var this_page_url = 'http://localhost:4000/javascript-hoisting';
-                            var this_page_identifier = '/javascript-hoisting';
-                            var this_page_title = 'JavaScript-Hoisting(호이스팅)';
+                            var this_page_url = 'http://localhost:4000/java-Interview-prep';
+                            var this_page_identifier = '/java-Interview-prep';
+                            var this_page_title = 'Java 면접 질문 정리(1)';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -351,14 +447,14 @@ JavaScript는 함수 코드를 실행가기전에 함수 선언에 대한 매모
                                 
                                   
                                     
-                                        
-                                        
-                                            <li><a href="/jekyll_blog/java-Interview-prep">Java 면접 질문 정리(1)</a></li>
-                                        
-                                    
                                   
                                 
                                   
+                                    
+                                        
+                                        
+                                            <li><a href="/jekyll_blog/javascript-hoisting">JavaScript-Hoisting(호이스팅)</a></li>
+                                        
                                     
                                   
                                 
@@ -409,61 +505,6 @@ JavaScript는 함수 코드를 실행가기전에 함수 선언에 대한 매모
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
-                
-
-    <article class="post-card diary-template">
-        
-            <a class="post-card-image-link" href="/jekyll_blog/java-Interview-prep">
-                <div class="post-card-image" style="background-image: url(/jekyll_blog/assets/built/images/devDiary/dev.jpg)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/jekyll_blog/java-Interview-prep">
-                <header class="post-card-header">
-                    
-                        
-                            
-                               <span class="post-card-tags">Diary</span>
-                            
-                        
-                            
-                                <span class="post-card-tags">Java</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">Java 면접 질문 정리(1)</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p>
-
-</p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                        
-                        <img class="author-profile-image" src="/jekyll_blog/assets/built/images/profile.jpg" alt="이상화" />
-                        
-                        <span class="post-card-author">
-                            <a href="/jekyll_blog/author/Concat0681/">이상화</a>
-                        </span>
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      2 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-            
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
@@ -471,12 +512,12 @@ JavaScript는 함수 코드를 실행가기전에 함수 선언에 대한 매모
 
     <article class="post-card diary-template">
         
-            <a class="post-card-image-link" href="/jekyll_blog/javascript-ajax-copy">
+            <a class="post-card-image-link" href="/jekyll_blog/javascript-hoisting">
                 <div class="post-card-image" style="background-image: url(/jekyll_blog/assets/built/images/devDiary/dev.jpg)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/jekyll_blog/javascript-ajax-copy">
+            <a class="post-card-content-link" href="/jekyll_blog/javascript-hoisting">
                 <header class="post-card-header">
                     
                         
@@ -490,7 +531,7 @@ JavaScript는 함수 코드를 실행가기전에 함수 선언에 대한 매모
                         
                     
 
-                    <h2 class="post-card-title">JavaScript-Ajax</h2>
+                    <h2 class="post-card-title">JavaScript-Hoisting(호이스팅)</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -514,7 +555,7 @@ JavaScript는 함수 코드를 실행가기전에 함수 선언에 대한 매모
                 <span class="reading-time">
                     
                     
-                      2 min read
+                      1 min read
                     
                 </span>
             </footer>
@@ -536,18 +577,18 @@ JavaScript는 함수 코드를 실행가기전에 함수 선언에 대한 매모
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">JavaScript-Hoisting(호이스팅)</div>
+    <div class="floating-header-title">Java 면접 질문 정리(1)</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=JavaScript-Hoisting%28%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85%29&amp;url=https://concat0681.github.io/jekyll_blog/javascript-hoisting"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Java+%EB%A9%B4%EC%A0%91+%EC%A7%88%EB%AC%B8+%EC%A0%95%EB%A6%AC%281%29&amp;url=https://concat0681.github.io/jekyll_blog/java-Interview-prep"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://concat0681.github.io/jekyll_blog/javascript-hoisting"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://concat0681.github.io/jekyll_blog/java-Interview-prep"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 
